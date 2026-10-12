@@ -1,0 +1,984 @@
+{
+  "classification": "DRAFT interrupted planning checkpoint; not release or planning acceptance",
+  "observedAt": "2026-10-11T10:03:07.316670+00:00",
+  "planningStartSha": "e09839c770bdb70b35144efcf697e6e3212f8e72",
+  "profile": {
+    "home": "/home/ubuntu/.pi-profiles/pi-board/home",
+    "agentDir": "/home/ubuntu/.pi-profiles/pi-board/agent"
+  },
+  "goals": [
+    {
+      "id": "66b783ed-1920-4990-beef-5fe5a00d1a35",
+      "cwd": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a129b5-753c-757f-9d38-90c2b73ea471",
+      "updatedAt": 1791708232105,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "d6682d66-0e39-4cdb-bcdf-ba4dc49ac762",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a10-thumbnails",
+      "status": "paused",
+      "driverSessionId": "01a127ed-82b4-719d-8c39-e332e6dc5123",
+      "updatedAt": 1791672657523,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "aadbfb93-dbf6-4fb9-9b34-3aa4f9ffe8cf",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a15b-layout-qa",
+      "status": "achieved",
+      "driverSessionId": "01a127ed-9c1e-724e-9c62-7f38672a5f77",
+      "updatedAt": 1791672659124,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "7c9120a4-07fd-4ed4-b14f-a55f22baa7c2",
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-alpha-rollout",
+      "status": "achieved",
+      "driverSessionId": "01a127b4-d50d-734f-8591-0a9651069234",
+      "updatedAt": 1791668208946,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "74abd3af-a3af-4213-9d17-49752e445b6c",
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-release-contract",
+      "status": "achieved",
+      "driverSessionId": "01a126a8-01e6-725a-8a40-4c2e137d56dc",
+      "updatedAt": 1791650227944,
+      "criteriaDone": 0,
+      "criteriaTotal": 7
+    },
+    {
+      "id": "58d4240f-2a9f-4827-8b82-b29dcc342e5a",
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-release-contract",
+      "status": "achieved",
+      "driverSessionId": "01a126b1-21d2-7468-b3b7-6f8ef4745adf",
+      "updatedAt": 1791651031606,
+      "criteriaDone": 0,
+      "criteriaTotal": 5
+    },
+    {
+      "id": "e98018bb-d2b0-4561-b224-1bec1a8b9bd3",
+      "cwd": "/home/ubuntu/code/acrolab-lite-portal-release-gates-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a129b9-8190-747b-81b2-c10ad00f49e5",
+      "updatedAt": 1791701653811,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "a5a7584c-7ae6-468e-a7c2-b2b8c2e54882",
+      "cwd": "/home/ubuntu/code/acrolab-lite-muse-alpha-night-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a12857-a9c7-70ff-8505-5f1d2fc06a5f",
+      "updatedAt": 1791682668196,
+      "criteriaDone": 0,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "8a5b287b-b926-4a99-a333-39d1fa5d05dc",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a04-timeline-qa",
+      "status": "paused",
+      "driverSessionId": "01a127ed-902c-7301-a429-87279f4ab7da",
+      "updatedAt": 1791672926033,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "9ada38fc-8dee-4333-a4a1-2084444b2b2e",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nim-glm-flash-qa",
+      "status": "paused",
+      "driverSessionId": "01a127e7-881e-7720-b72e-029ed25e1808",
+      "updatedAt": 1791672663332,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "6742c3bc-3408-470d-99bb-0b2a6e3287cb",
+      "cwd": "/home/ubuntu/code/acrolab-lite-alpha-ux-campaign",
+      "status": "paused",
+      "driverSessionId": "01a127b4-3845-7586-92f7-5c8102c474b6",
+      "updatedAt": 1791678124692,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "7c8012db-7149-4b3b-8db8-e8c9f2e8d519",
+      "cwd": "/home/ubuntu/code/acrolab-lite-audit-sol-xhigh-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a12842-5562-7017-b147-caff474021be",
+      "updatedAt": 1791677384484,
+      "criteriaDone": 6,
+      "criteriaTotal": 7
+    },
+    {
+      "id": "49c95a76-61b5-4b70-9d8f-a7da321c19b7",
+      "cwd": "/home/ubuntu/code/acrolab-lite-audit-sol-xhigh-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a12856-9533-75f2-bbda-5107f2b9a0ba",
+      "updatedAt": 1791680113522,
+      "criteriaDone": 7,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "ca2b5b1b-4db9-4256-98ab-840836fd4364",
+      "cwd": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a129b5-430b-7289-bcff-5ce1f87bb71a",
+      "updatedAt": 1791703670050,
+      "criteriaDone": 7,
+      "criteriaTotal": 7
+    },
+    {
+      "id": "5bb41c9c-4e60-4069-8608-1ee2271690b8",
+      "cwd": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a12a07-b75c-7607-a4ff-19a92d2abc35",
+      "updatedAt": 1791708839241,
+      "criteriaDone": 5,
+      "criteriaTotal": 5
+    },
+    {
+      "id": "f462d8e0-4102-4de9-abd5-68a17fe115c2",
+      "cwd": "/home/ubuntu/code/acrolab-lite-spec-gap-dogfood-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a12884-6d72-76b2-b45e-6f079756eee8",
+      "updatedAt": 1791681453338,
+      "criteriaDone": 0,
+      "criteriaTotal": 5
+    },
+    {
+      "id": "ef3ff984-5d4e-4a77-a24f-0012c17223cb",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-acceptance-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a1287d-2930-76a9-84e9-0d75ab6aa956",
+      "updatedAt": 1791682305990,
+      "criteriaDone": 0,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "6f115f71-ff65-48a1-934f-d70a54c22077",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-redteam-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a128e3-b334-7764-b95b-0ba56d5e73d3",
+      "updatedAt": 1791689295674,
+      "criteriaDone": 8,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "b0c29447-b060-44b0-ba9f-5c6743d66dde",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a01-responsive",
+      "status": "achieved",
+      "driverSessionId": "01a127ef-cb36-75c5-a74b-e52b31f9414f",
+      "updatedAt": 1791673038463,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "b0cddd8c-c7e3-4963-a002-80485d15eb34",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nim-lightning-qa",
+      "status": "paused",
+      "driverSessionId": "01a127db-841e-7113-979c-cb79381686c4",
+      "updatedAt": 1791672658809,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "d16837de-b68f-4e7b-b3e0-9cce52fa6b5d",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nim-lightning-fluzo-bench",
+      "status": "paused",
+      "driverSessionId": "01a12821-452a-73b0-80db-9987ee0eba57",
+      "updatedAt": 1791674888208,
+      "criteriaDone": 3,
+      "criteriaTotal": 4
+    },
+    {
+      "id": "bf7a7271-ad64-4fa5-a6f2-c99f27a0a522",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a12-release-qa",
+      "status": "achieved",
+      "driverSessionId": "01a127f2-e5f0-765e-b2ef-68afdf3e7a9d",
+      "updatedAt": 1791673735001,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "bb972b38-8447-4152-8486-99b86367e691",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nightly-regression",
+      "status": "achieved",
+      "driverSessionId": "01a12364-5598-738f-9f20-21a92e7c5e37",
+      "updatedAt": 1791603071917,
+      "criteriaDone": 0,
+      "criteriaTotal": 7
+    },
+    {
+      "id": "4149b923-7caa-4e6f-a2eb-b05b58e925ca",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nightly-regression",
+      "status": "achieved",
+      "driverSessionId": "01a125c4-1342-7744-8ab5-0487c51aa2eb",
+      "updatedAt": 1791636834064,
+      "criteriaDone": 0,
+      "criteriaTotal": 5
+    },
+    {
+      "id": "32353e1c-275e-4d10-9b73-4141a53c34dc",
+      "cwd": "/home/ubuntu/code/acrolab-lite-nim-super-qa",
+      "status": "achieved",
+      "driverSessionId": "01a127e7-9142-7288-b99d-ffb8fbe73373",
+      "updatedAt": 1791671028791,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "4d87c4f6-2953-4d1d-9091-7f662d01c42f",
+      "cwd": "/home/ubuntu/code/acrolab-lite-muse-followon-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a1290b-f418-77e2-b945-aec72349934e",
+      "updatedAt": 1791690957928,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "e951502c-1a3b-4244-8c45-8fb1cf286b09",
+      "cwd": "/home/ubuntu/code/acrolab-lite-par-a03-rotate-qa",
+      "status": "paused",
+      "driverSessionId": "01a127ef-d417-7116-b559-1dbda56a27a9",
+      "updatedAt": 1791672655301,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    },
+    {
+      "id": "3c6f84a4-d4c7-49df-9ac0-2755f94939bf",
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-feedback-alpha",
+      "status": "achieved",
+      "driverSessionId": "01a126b2-5209-7402-87fd-0da75bed37c0",
+      "updatedAt": 1791651373831,
+      "criteriaDone": 0,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "db6d84f0-e373-46ae-9017-d670d8415f3c",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-followon-20261011",
+      "status": "paused",
+      "driverSessionId": "01a12910-91ad-71da-9887-9dcafece86e2",
+      "updatedAt": 1791692017249,
+      "criteriaDone": 5,
+      "criteriaTotal": 6
+    },
+    {
+      "id": "31c48011-eddf-45cb-8923-a34b5b45f3e7",
+      "cwd": "/home/ubuntu/code/acrolab-lite-longcat-gesture-tests",
+      "status": "paused",
+      "driverSessionId": "01a127b5-b801-70c7-9fd0-9b1667464a67",
+      "updatedAt": 1791667937600,
+      "criteriaDone": 0,
+      "criteriaTotal": 4
+    },
+    {
+      "id": "e25700b0-d293-4a09-b62f-c0c310e9f222",
+      "cwd": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "status": "achieved",
+      "driverSessionId": "01a129b5-1237-7638-b05b-faecfe2f4b99",
+      "updatedAt": 1791702284015,
+      "criteriaDone": 0,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "56e27ddb-09e2-486c-ba38-0047de38ae34",
+      "cwd": "/home/ubuntu/code/acrolab-lite",
+      "status": "paused",
+      "driverSessionId": null,
+      "updatedAt": 1791589817494,
+      "criteriaDone": 0,
+      "criteriaTotal": 7
+    },
+    {
+      "id": "36f8fbed-5bb3-4c8e-a8c0-26ad66a4c0b3",
+      "cwd": "/home/ubuntu/code/acrolab-lite",
+      "status": "paused",
+      "driverSessionId": "01a12a61-211e-742d-b62f-1f851e7e102d",
+      "updatedAt": 1791712905706,
+      "criteriaDone": 0,
+      "criteriaTotal": 8
+    },
+    {
+      "id": "9f29c911-60d7-4192-b4c7-434ce8766c7e",
+      "cwd": "/home/ubuntu/code/acrolab-lite-timeline-mobile-tests",
+      "status": "paused",
+      "driverSessionId": "01a127d3-5bc4-762b-abf6-d9809b227771",
+      "updatedAt": 1791669586713,
+      "criteriaDone": 0,
+      "criteriaTotal": 3
+    }
+  ],
+  "sessions": [
+    {
+      "id": "01a12856-9533-75f2-bbda-5107f2b9a0ba",
+      "cwd": "/home/ubuntu/code/acrolab-lite-audit-sol-xhigh-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T00:55:16.835Z",
+      "native": {
+        "id": "9f61fd4b-e69c-452d-be70-bb55d3e962fb",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791680108767
+      },
+      "nativeStateTimestamp": "2026-10-11T00:55:08.768Z"
+    },
+    {
+      "id": "01a12857-a9c7-70ff-8505-5f1d2fc06a5f",
+      "cwd": "/home/ubuntu/code/acrolab-lite-muse-alpha-night-20261011",
+      "status": "active",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T01:37:51.989Z",
+      "native": {
+        "id": "f6dd0cc5-5819-4ac7-bc8f-4bfe6c32b084",
+        "status": "done",
+        "turnsUsed": 9,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791682663892
+      },
+      "nativeStateTimestamp": "2026-10-11T01:37:43.892Z"
+    },
+    {
+      "id": "01a1287d-2930-76a9-84e9-0d75ab6aa956",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-acceptance-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T01:31:48.895Z",
+      "native": {
+        "id": "b4929a23-233c-4e79-9fcf-4311eb1a7d1d",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791682298609
+      },
+      "nativeStateTimestamp": "2026-10-11T01:31:38.609Z"
+    },
+    {
+      "id": "01a12884-6d72-76b2-b45e-6f079756eee8",
+      "cwd": "/home/ubuntu/code/acrolab-lite-spec-gap-dogfood-20261011",
+      "status": "active",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T01:17:34.908Z",
+      "native": {
+        "id": "0a8a97c7-48e0-4700-9f18-b9857e897920",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791681451550
+      },
+      "nativeStateTimestamp": "2026-10-11T01:17:31.550Z"
+    },
+    {
+      "id": "01a128e3-b334-7764-b95b-0ba56d5e73d3",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-redteam-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T03:28:18.177Z",
+      "native": {
+        "id": "99c10db3-837e-4692-b204-a1e36670952b",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791689291924
+      },
+      "nativeStateTimestamp": "2026-10-11T03:28:11.924Z"
+    },
+    {
+      "id": "01a1290b-f418-77e2-b945-aec72349934e",
+      "cwd": "/home/ubuntu/code/acrolab-lite-muse-followon-20261011",
+      "status": "active",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T03:55:59.091Z",
+      "native": {
+        "id": "6b41bfda-e2b2-4eb9-8945-def7e440d229",
+        "status": "done",
+        "turnsUsed": 2,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791690955569
+      },
+      "nativeStateTimestamp": "2026-10-11T03:55:55.569Z"
+    },
+    {
+      "id": "01a12910-91ad-71da-9887-9dcafece86e2",
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-followon-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T04:14:20.591Z",
+      "native": {
+        "id": "abfa93b6-0218-4b50-8a00-9b02f0c8584a",
+        "status": "paused",
+        "turnsUsed": 0,
+        "maxTurns": 20,
+        "lastVerdict": null,
+        "pausedReason": "error: WebSocket closed 1000",
+        "updatedAt": 1791691586432
+      },
+      "nativeStateTimestamp": "2026-10-11T04:06:26.432Z"
+    },
+    {
+      "id": "01a129b5-1237-7638-b05b-faecfe2f4b99",
+      "cwd": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "status": "active",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T08:51:28.658Z",
+      "native": {
+        "id": "0eb6d009-1baa-4f0b-9eba-dd59738723ac",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791702281825
+      },
+      "nativeStateTimestamp": "2026-10-11T07:04:41.825Z"
+    },
+    {
+      "id": "01a129b5-430b-7289-bcff-5ce1f87bb71a",
+      "cwd": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T08:20:43.433Z",
+      "native": {
+        "id": "2e8e1ced-2a84-4cd6-a1f4-b1e876231f32",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791703667085
+      },
+      "nativeStateTimestamp": "2026-10-11T07:27:47.085Z"
+    },
+    {
+      "id": "01a129b5-753c-757f-9d38-90c2b73ea471",
+      "cwd": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "status": "active",
+      "model": "opencode-go/mimo-v2.6-flash",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T08:44:49.874Z",
+      "native": {
+        "id": "2c212e95-8bdf-4172-8678-e6422a342996",
+        "status": "done",
+        "turnsUsed": 2,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791708207578
+      },
+      "nativeStateTimestamp": "2026-10-11T08:43:27.579Z"
+    },
+    {
+      "id": "01a129b9-8190-747b-81b2-c10ad00f49e5",
+      "cwd": "/home/ubuntu/code/acrolab-lite-portal-release-gates-20261011",
+      "status": "active",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "thinkingLevel": "medium",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T06:54:15.824Z",
+      "native": {
+        "id": "2a1b56d4-249d-44b6-80b0-eb3d1cfaf6b0",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791701652234
+      },
+      "nativeStateTimestamp": "2026-10-11T06:54:12.234Z"
+    },
+    {
+      "id": "01a12a07-b75c-7607-a4ff-19a92d2abc35",
+      "cwd": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "status": "active",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": null,
+      "currentTool": null,
+      "lastTranscriptTimestamp": "2026-10-11T08:54:02.308Z",
+      "native": {
+        "id": "d5962bdb-1777-48b8-abb3-2f10e4995646",
+        "status": "done",
+        "turnsUsed": 1,
+        "maxTurns": 20,
+        "lastVerdict": "done",
+        "pausedReason": null,
+        "updatedAt": 1791708836088
+      },
+      "nativeStateTimestamp": "2026-10-11T08:53:56.088Z"
+    },
+    {
+      "id": "01a12a61-211e-742d-b62f-1f851e7e102d",
+      "cwd": "/home/ubuntu/code/acrolab-lite",
+      "status": "streaming",
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "xhigh",
+      "lastActivityAt": 1791712987151,
+      "currentTool": "bash",
+      "lastTranscriptTimestamp": "2026-10-11T10:03:07.139Z",
+      "native": {
+        "id": "3c9b2987-4cd9-4c5a-9b29-afeb959d6743",
+        "status": "paused",
+        "turnsUsed": 0,
+        "maxTurns": 20,
+        "lastVerdict": null,
+        "pausedReason": "error: WebSocket closed 1000",
+        "updatedAt": 1791712903614
+      },
+      "nativeStateTimestamp": "2026-10-11T10:01:43.615Z"
+    }
+  ],
+  "repositories": [
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite",
+      "head": "e09839c770bdb70b35144efcf697e6e3212f8e72",
+      "branch": "develop",
+      "status": "?? docs/reviews/"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "head": "3708cb56a46a5107521d85167feb137eb8e90e5e",
+      "branch": "release/lite-integrated-alpha-20261011",
+      "status": "?? evidence/rel-green-integrated/",
+      "appSha256": "ee75ec7fdacc465714277e2471ba65ddf6ceaa01ef4df8bbcced16267837670f",
+      "appBlob": "83d5fb5150f1f4abde0ea43e6059d6171b1dd0e3"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "head": "d41fea2c597fe54b856745461ddca3ba76ce1cc2",
+      "branch": "fix/lite-library-persistence-20261011",
+      "status": "",
+      "appSha256": "e2941d588add72fe781a61f99377cc22d4596941bd800522b9ade1f47bb38ae5",
+      "appBlob": "19fabb011cd84267e49674bda351cd4aa8246672"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "head": "e12b103a6764ad18d791a9813fd7298df92c9c09",
+      "branch": "audit/lite-xhigh-adversarial-20261011",
+      "status": "",
+      "appSha256": "aef7c11428839d877af1818224e7a286a0189a9ab39e0ea2e6f1305a32b49bd9",
+      "appBlob": "c19c4267a3dc5c1da1ebc1f538e6a51c962f52ba"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-sol-xhigh-redteam-20261011",
+      "head": "bbea4f07d0a7514f00dc48af5478f527ddab5d5f",
+      "branch": "audit/lite-redteam-xhigh-reset-20261011",
+      "status": "",
+      "appSha256": "4c86e1e0b8a30c8f277629bb51063e846dffcf6d81aa4f9998b0e69dd11018ed",
+      "appBlob": "0e1002ba2ad9ca40aabce36f3f3deee3c7fd244b"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-spec-gap-dogfood-20261011",
+      "head": "e90a4a4675aff8916958f53de7485014223d786f",
+      "branch": "plan/lite-spec-gap-dogfood-20261011",
+      "status": "",
+      "appSha256": "d35ea5cd13ee16147c02af2c09cd3a73d47dcc5d64af7d7edded0e0b25f3c658",
+      "appBlob": "dde4d55edbaa056e7e7385be4e76a65a54e7d635"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-portal-release-gates-20261011",
+      "head": "a989b21b4518e065ac97dda0180e549830753847",
+      "branch": "test/lite-portal-release-gates-20261011",
+      "status": "?? .pi/"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web",
+      "head": "e201ffaa7806fa528cba8494b9c57e3dd372d2bb",
+      "branch": "main",
+      "status": "?? .pi/\n?? AGENTS.md\n?? openspec/\n?? public/AGENTS.md\n?? public/alpha/AGENTS.md\n?? public/app/AGENTS.md"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-release-contract",
+      "head": "8a34d151f7ff4d6cef335aeed346ffa5c70eaec1",
+      "branch": "feat/release-refs-alpha-compare",
+      "status": "?? .pi/"
+    },
+    {
+      "cwd": "/home/ubuntu/code/acrolab-lite-beta-web-alpha-rollout",
+      "head": "2bc3ffd0d83220a525826ec7ffb98127dd083dc7",
+      "branch": "feat/alpha-rollout-dogfood-20261010",
+      "status": ""
+    }
+  ],
+  "rawStats": [
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "path": "evidence/rel-full-43111.json",
+      "sha256": "8e61868c932b677e1b2c19eda106000dd55aa84c2e40a49e7ff784276601b7c0",
+      "stats": {
+        "startTime": "2026-10-11T06:52:58.470Z",
+        "duration": 397098.765,
+        "expected": 165,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "path": "evidence/rel-green-43111.json",
+      "sha256": "7106d9f02bb1cd037671f78b10be67eab8f7236daf00dc9c1ebf42f3fa6886bb",
+      "stats": {
+        "startTime": "2026-10-11T06:50:51.690Z",
+        "duration": 54574.473999999995,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "path": "evidence/rel-green-mobile-43111.json",
+      "sha256": "863c7d37f5c635834864098352c543e52a82ccd16494815771a7164fd3e7cad7",
+      "stats": {
+        "startTime": "2026-10-11T06:52:50.211Z",
+        "duration": 5610.321999999999,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "path": "evidence/rel-head-check-43111.json",
+      "sha256": "839a250603aeab930b51bd6729177c7e872c311567e2ec035658ffc1380dc4db",
+      "stats": {
+        "startTime": "2026-10-11T06:59:57.836Z",
+        "duration": 25080.143,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-release-integration-20261011",
+      "path": "evidence/rel-red-43111.json",
+      "sha256": "9f47a89a595ec14db1e75ef93d191c1173200167f954d5beeac8aefaee01c45d",
+      "stats": {
+        "startTime": "2026-10-11T06:48:09.766Z",
+        "duration": 144089.61599999998,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 10,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/full/results.json",
+      "sha256": "8721b68e717678ec2dbb267bf66289d808c885f28d2463b88ab1881d6a37be38",
+      "stats": {
+        "startTime": "2026-10-11T08:08:39.592Z",
+        "duration": 317312.397,
+        "expected": 160,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/green-desktop/results-r2.json",
+      "sha256": "e269b8f6f395075be18af05c88a1f9dc4f95a60d9d5bd7cc57b54c9f46d1532d",
+      "stats": {
+        "startTime": "2026-10-11T08:40:00.472Z",
+        "duration": 8860.136999999999,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/green-desktop/results.json",
+      "sha256": "9c8eaa0daf579c77002d0dcf3e904f81a67282145569b4ddb88c99d2f718680d",
+      "stats": {
+        "startTime": "2026-10-11T08:06:47.608Z",
+        "duration": 56607.04,
+        "expected": 25,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/green-mobile/results.json",
+      "sha256": "2dd553bd6de3ef2ad466d150d99031c2cf723862f8fed74803f2f17192530314",
+      "stats": {
+        "startTime": "2026-10-11T08:08:04.891Z",
+        "duration": 33959.382,
+        "expected": 15,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/pre-fix-neighbors/results.json",
+      "sha256": "396f3087e0e3940bbfd12e3b95b595eee034d8c11fd3e16257d6003dd1b78b49",
+      "stats": {
+        "startTime": "2026-10-11T07:46:18.437Z",
+        "duration": 20908.477000000003,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/red-desktop/results-r2.json",
+      "sha256": "631c04b950344e2e4b31eb4243694fa4d8c35a967e82f0867f55131c612a8647",
+      "stats": {
+        "startTime": "2026-10-11T08:39:16.044Z",
+        "duration": 25592.326,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 3,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/red-desktop/results.json",
+      "sha256": "3148f13e9f7c540f3dee7ec171de5122c76d7e4376d3647848f5ac088b0618e5",
+      "stats": {
+        "startTime": "2026-10-11T08:04:55.181Z",
+        "duration": 75596.90800000001,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-library-fixes-20261011",
+      "path": "evidence/mimo-r6r7-20261011/red-mobile/results.json",
+      "sha256": "f0bf4e88026ce81668f3bb5e8ba7a81744b4413b9ad7e2e65c122fdb9bac5ecb",
+      "stats": {
+        "startTime": "2026-10-11T08:06:29.108Z",
+        "duration": 17754.666,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "path": "evidence/sol-release-20261011/verified-summary.json",
+      "sha256": "b376eee47dcd6d87f90c7fbff210b2b6f20553ba9e7f3b4d0366baceae441eeb",
+      "runs": "see source summary",
+      "total": {
+        "expected": 22,
+        "unexpected": 28
+      }
+    },
+    {
+      "repo": "/home/ubuntu/code/acrolab-lite-xhigh-release-gates-20261011",
+      "path": "evidence/sol-adversarial-20261011/verified-summary.json",
+      "sha256": "484d5e022734fbd2471b815efc9c7326612c9cb1e57331a766bf02c413fa917d",
+      "runs": [
+        {
+          "label": "muse-repaired-50",
+          "source": "3708cb56a46a5107521d85167feb137eb8e90e5e",
+          "blob": "83d5fb5150f1f4abde0ea43e6059d6171b1dd0e3",
+          "sha256": "ee75ec7fdacc465714277e2471ba65ddf6ceaa01ef4df8bbcced16267837670f",
+          "counts": {
+            "passed": 22,
+            "failed": 28,
+            "skipped": 0
+          },
+          "durationMs": 356661.602
+        },
+        {
+          "label": "muse-new-10",
+          "source": "3708cb56a46a5107521d85167feb137eb8e90e5e",
+          "blob": "83d5fb5150f1f4abde0ea43e6059d6171b1dd0e3",
+          "sha256": "ee75ec7fdacc465714277e2471ba65ddf6ceaa01ef4df8bbcced16267837670f",
+          "counts": {
+            "passed": 3,
+            "failed": 7,
+            "skipped": 0
+          },
+          "durationMs": 78847.522
+        },
+        {
+          "label": "mimo-reviewed-18",
+          "source": "12210d92c2032b0384e18242e6686b30acaeb94c",
+          "blob": "19fabb011cd84267e49674bda351cd4aa8246672",
+          "sha256": "e2941d588add72fe781a61f99377cc22d4596941bd800522b9ade1f47bb38ae5",
+          "counts": {
+            "passed": 12,
+            "failed": 6,
+            "skipped": 0
+          },
+          "durationMs": 91183.348
+        }
+      ],
+      "total": {
+        "passed": 37,
+        "failed": 41,
+        "skipped": 0
+      }
+    }
+  ],
+  "automationRuns": [
+    {
+      "runId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00115",
+      "parentRunId": null,
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791710100103,
+      "endedAt": 1791710113030,
+      "sessionId": null,
+      "children": [
+        "2026-10-11-091500-acrolab-lite-continuation-20261011-00116"
+      ],
+      "findings": 0
+    },
+    {
+      "runId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00101",
+      "parentRunId": null,
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791706500001,
+      "endedAt": 1791706511967,
+      "sessionId": null,
+      "children": [
+        "2026-10-11-081500-acrolab-lite-continuation-20261011-00102"
+      ],
+      "findings": 0
+    },
+    {
+      "runId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00103",
+      "parentRunId": null,
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791706500079,
+      "endedAt": 1791706519371,
+      "sessionId": null,
+      "children": [
+        "2026-10-11-081500-acrolab-lite-continuation-20261011-00104"
+      ],
+      "findings": 4
+    },
+    {
+      "runId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00113",
+      "parentRunId": null,
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791710100000,
+      "endedAt": 1791710112742,
+      "sessionId": null,
+      "children": [
+        "2026-10-11-091500-acrolab-lite-continuation-20261011-00114"
+      ],
+      "findings": 3
+    },
+    {
+      "runId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00116",
+      "parentRunId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00115",
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791710100104,
+      "endedAt": 1791710113029,
+      "sessionId": "01a12a3e-81a1-75d2-988d-c70e90f4410a",
+      "children": null,
+      "findings": 0
+    },
+    {
+      "runId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00102",
+      "parentRunId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00101",
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791706500002,
+      "endedAt": 1791706511966,
+      "sessionId": "01a12a07-922d-70bf-ac2c-ebe0b0ff414c",
+      "children": null,
+      "findings": 0
+    },
+    {
+      "runId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00104",
+      "parentRunId": "2026-10-11-081500-acrolab-lite-continuation-20261011-00103",
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791706500080,
+      "endedAt": 1791706519370,
+      "sessionId": "01a12a07-9282-72fe-ab9a-ad572d36d6e4",
+      "children": null,
+      "findings": 4
+    },
+    {
+      "runId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00114",
+      "parentRunId": "2026-10-11-091500-acrolab-lite-continuation-20261011-00113",
+      "name": "acrolab-lite-continuation-20261011",
+      "status": "done",
+      "startedAt": 1791710100001,
+      "endedAt": 1791710112740,
+      "sessionId": "01a12a3e-811c-7379-aa12-239d3e20f16f",
+      "children": null,
+      "findings": 3
+    }
+  ],
+  "independentReview": "NOT_RUN",
+  "currentMissionJudgeVerdict": "NOT_RUN; native paused with no verdict",
+  "protectedSha256": {
+    "assets/source/manekin2D-vertical2.svg": "99ccb17102f550192b4e47e9ae3b83f18ccdc3d8ad742a5f77d3d61f38df097e",
+    "assets/reference/svg-motion-lab-v0.5.svg": "93246123d6e307e51562d187ddc0ed33639953f83ac9fee9f297cbed1f07555b"
+  }
+}

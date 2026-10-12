@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.playwright/
+test-results/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+# Keep reproducible Pi project configuration; exclude local caches and ad-hoc skills.
+.pi/*
+!.pi/settings.json
+!.pi/prompts/
+!.pi/dashboard/
+.pi/dashboard/*
+!.pi/dashboard/knowledge_base.json
+!.pi/skills/
+.pi/skills/*
+!.pi/skills/openspec-*/
+!.pi/skills/openspec-*/SKILL.md
+!.pi/skills/AGENTS.md
+!.pi/skills/dox-describe/
+.pi/skills/dox-describe/*
+!.pi/skills/dox-describe/SKILL.md
+.worktrees/
+.DS_Store

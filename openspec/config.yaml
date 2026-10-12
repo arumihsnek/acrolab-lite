@@ -1,0 +1,30 @@
+schema: spec-driven
+
+context: |
+  AcroLab Lite is a NEW independent creative/participatory 2D sagittal acrobatic animation product.
+  It is mechanically informed DESIGN, not a physics engine or validated biomechanical tool.
+  This repo is NOT the AcroLab Godot Studio. Its normative product contract is docs/PRODUCT-CONTRACT.md.
+  The user's exact source mannequin is assets/source/manekin2D-vertical2.svg.
+  Only native Pi/PiBoard/OpenSpec/Goal; no Jefa, Nudger, Codex CLI, custom scheduler or parallel control plane.
+
+rules:
+  proposal:
+    - State user-visible outcome and non-goals, explicitly separate Lite vs scientific AcroLab.
+    - Record Human Gates before implementation or scientific claims.
+    - List discipline skills in a Discipline Skills section.
+  specs:
+    - Requirements MUST have testable Given/When/Then scenarios; preserve negative evidence.
+    - Gesture priority and time/head/key semantics must be formally unambiguous.
+    - Mark all mechanical constraints DESIGN, never PHYSICS/MEASURED.
+  tasks:
+    - Scenario-design test-plan before implementation tasks; one test scenario maps to one task.
+    - Plan on develop. Use isolated worktree for implementation after approved gate.
+
+operations:
+  apply:
+    guidance:
+      - STOP before implementing until user approves interactive planning UI Human Gate.
+      - All work on Lite, no file changes to /home/ubuntu/code/acrolab.
+  archive:
+    guidance:
+      - Distinguish accepted specs, tested outcomes and human hardware validation.

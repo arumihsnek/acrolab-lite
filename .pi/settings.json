@@ -1,0 +1,12 @@
+{
+  "worktreeInit": {
+    "gate": "false",
+    "run": {
+      "type": "script",
+      "command": "echo 'acrolab-lite — no worktree-init step needed (static product repo)'"
+    }
+  },
+  "packages": [
+    "../../pi-agent-dashboard/packages/kb-extension"
+  ]
+}
