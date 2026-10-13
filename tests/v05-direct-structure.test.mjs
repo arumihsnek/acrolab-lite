@@ -19,12 +19,19 @@ test('exact 13 joint handles, source paths and metadata carried into HTML',()=>{
   for(const name of ['hip','knee','ankle','midtarsal','mtp','lower_trunk','upper_trunk','neck_base','head_neck','shoulder','elbow','wrist','collective_finger'])
     assert(html.includes('data-joint="'+name+'"'),'missing joint '+name);
 });
-test('original behavior/controller byte-equivalent modulo one export-compatibility line',()=>{
+test('original controller equivalent modulo extracted constants and export compatibility',()=>{
   assert(sourceScript,'source inline controller not found');
   const source=sourceScript[1].replace(/^<!\[CDATA\[/,'').replace(/\]\]>$/,'');
+  const constants=source.slice(source.indexOf('const CHANNELS='),source.indexOf('const round='));
+  const rig=readFileSync('public/v05-direct/rig-definition.js','utf8');
+  assert(rig.includes(constants),'rig module changed original constants');
+  const imported="import { CHANNELS, LIMITS, SIGN, PIVOT, PART, ID, PARENT, SOURCE_SHA, initBody } from './rig-definition.js';";
+  assert(ctrl.includes(imported),'controller does not import extracted module');
   const external=ctrl.slice(ctrl.indexOf("(()=>{'use strict';"));
-  const repaired=external.replace("root.querySelector('#motionLabScript')?.setAttribute('type','application/ecmascript');",'');
-  assert.equal(repaired,source,'Unexpected behavioral rewrite in translation');
+  const repaired=external
+    .replace("root.querySelector('#motionLabScript')?.setAttribute('type','application/ecmascript');",'')
+    .replace('const round=',constants+'const round=');
+  assert.equal(repaired,source,'Unexpected rewrite in v0.5 behavior/controller');
 });
 test('source SVG script preserved inert in HTML, restored only on SVG export',()=>{
   assert(html.includes('type="application/x-acrolab-v05-frozen-source"'));
