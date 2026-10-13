@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071c24">
+<meta name="robots" content="noindex,nofollow">
+<title>AcroLab Lite — traducción directa de SVG Motion Lab v0.5</title>
+<link rel="stylesheet" href="./host.css">
+</head>
+<body>
+<main id="v05-direct-root" aria-label="Editor AcroLab Lite v0.5 trasladado a HTML">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" id="lab-svg" width="100%" height="100%" viewBox="0 0 1260 790" version="1.1" role="application" aria-label="AcroLab SVG Motion Lab v0.5">
+  <style><![CDATA[svg{width:100vw;height:100dvh;display:block;margin:0;background:#071c24;font:13px system-ui, sans-serif;touch-action:none;user-select:none}
+text{pointer-events:none}.panel{fill:#102b35;stroke:#2d4b53;stroke-width:1}.button{cursor:pointer;touch-action:manipulation}.button>rect{fill:#1b3b43;stroke:#39616b;stroke-width:1}.button.primary>rect{fill:#247260}.button.active>rect{fill:#297d6e;stroke:#baffeb;stroke-width:2}.button text{fill:#e5f5ed}.button:focus-visible>rect{stroke:#fff;stroke-width:3}.muted{fill:#8daab0}.key-hit{cursor:pointer;fill:transparent;touch-action:none}.key{fill:#d0ac6f;stroke:#fff0c5;stroke-width:1.3;pointer-events:none}.key.sel{fill:#67d7b4;stroke-width:2.3}.key.ghost{fill:#a3aabd;stroke:#e0e8f5}.key.edit{stroke:#ffb884;stroke-width:3}.handle{touch-action:none;cursor:crosshair}.handle circle{pointer-events:none}.handle .hit{fill:transparent;pointer-events:all}.handle .dot{fill:#be655a;stroke:#f8ada1;stroke-width:1.2}.handle.sel .dot{fill:#ffcc97;stroke:#fff;stroke-width:2.3}.frozen-reference{pointer-events:none;filter:grayscale(.2)}.ghost-reference{pointer-events:none;stroke-dasharray:3 2}.floor{stroke:#b9dac8;stroke-width:1.1;stroke-dasharray:5 4}.label{fill:#a4eed1;font-size:11px;font-weight:700}.tiny{font-size:10px;fill:#a8c2c7}.time-rail{fill:#112c37;stroke:#2b5058;stroke-width:1}.transport{fill:#102833}.toast{fill:#c6e1dc;font-size:11px}.focus{fill:#f7bd88;font-weight:700}]]></style>
+  <defs>
+    <clipPath id="clipStageD">
+      <rect x="219" y="129" width="811" height="496" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clipStageM">
+      <rect x="0" y="96" width="400" height="422" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <metadata id="acro-pose-data">{
+  "schema": "acrolab-svg-motion-experiment-v2",
+  "kind": "DESIGN_NO_PHYSICS",
+  "sourceSvg": "manekin2D-vertical2.svg",
+  "rig": {
+    "id": "mannequin2d-studio-rig",
+    "version": "1",
+    "mapping": "SOURCE_MARKS_EXACT_GODOT_UNVALIDATED",
+    "visual_mapping": "svg-pivot-r4-original2-marks",
+    "svg_source_sha256": "7069ad3dfd8170e862f24e1a408848040807ccb1d569c340143ad75e34812835"
+  },
+  "units": {
+    "body": "degrees_local",
+    "placement": "SVG_original_viewBox_units",
+    "orientation": "degrees_unwrapped",
+    "time": "seconds_decimal_prototype"
+  },
+  "duration": 3,
+  "interpolation": "linear",
+  "floorY": 271.88986,
+  "keys": [
+    {
+      "id": "pose-01",
+      "label": "Inicio / neutral",
+      "t": 0,
+      "body": {
+        "hip": 0,
+        "knee": 0,
+        "ankle": 0,
+        "midtarsal": 0,
+        "mtp": 0,
+        "lower_trunk": 0,
+        "upper_trunk": 0,
+        "neck_base": 0,
+        "head_neck": 0,
+        "shoulder": 0,
+        "elbow": 0,
+        "wrist": 0,
+        "collective_finger": 0
+      },
+      "placement": {
+        "x": 0,
+        "y": 0,
+        "ori": 0
+      },
+      "kind": "pose"
+    },
+    {
+      "id": "pose-02",
+      "label": "Impulso / prueba",
+      "t": 1.15,
+      "body": {
+        "hip": -23,
+        "knee": 40,
+        "ankle": -13,
+        "midtarsal": 0,
+        "mtp": 0,
+        "lower_trunk": 0,
+        "upper_trunk": 12,
+        "neck_base": 0,
+        "head_neck": 0,
+        "shoulder": -46,
+        "elbow": -14,
+        "wrist": 0,
+        "collective_finger": 0
+      },
+      "placement": {
+        "x": 0,
+        "y": -12,
+        "ori": -13
+      },
+      "kind": "pose"
+    },
+    {
+      "id": "pose-03",
+      "label": "Agrupado / prueba",
+      "t": 2.35,
+      "body": {
+        "hip": -73,
+        "knee": 95,
+        "ankle": 9,
+        "midtarsal": 0,
+        "mtp": 0,
+        "lower_trunk": 10,
+        "upper_trunk": 22,
+        "neck_base": 0,
+        "head_neck": 0,
+        "shoulder": -56,
+        "elbow": -42,
+        "wrist": 0,
+        "collective_finger": 0
+      },
+      "placement": {
+        "x": 11,
+        "y": -14,
+        "ori": -20
+      },
+      "kind": "pose"
+    }
+  ],
+  "library": []
+}</metadata>
+  <title>AcroLab SVG Motion Lab v0.5 — ejes tomados de marcas del SVG original</title>
+  <desc>Editor SVG autocontenido; poses, suelo geométrico, selección de articulaciones y referencias; no simulación física.</desc>
+  <g id="desktopLayout">
+    <rect x="0" y="0" width="1260" height="790" fill="#081b22"/>
+    <rect x="0" y="0" width="1260" height="55" fill="#103039"/>
+    <text x="18" y="35" fill="#a8f2d8" font-size="21" font-weight="800">ACROLAB</text>
+    <text x="160" y="32" fill="#97b9b4" font-size="12">SVG MOTION LAB · v0.5</text>
+    <text x="1014" y="32" fill="#d7b78e" font-size="11">EDITORIAL · NO PHYSICS</text>
+    <rect x="0" y="55" width="218" height="575" fill="#102b35"/>
+    <rect x="1031" y="55" width="229" height="575" fill="#102b35"/>
+    <rect x="218" y="55" width="813" height="575" fill="#0c2a33"/>
+    <rect x="0" y="630" width="1260" height="160" fill="#0d2630"/>
+    <text x="14" y="82" fill="#a6ecd5" font-size="12" font-weight="800">POSES</text>
+    <text x="14" y="102" fill="#8eaeb5" font-size="10">Single tap selects · double tap edits</text>
+    <g data-action="add" data-value="" class="button" role="button" tabindex="0" aria-label="+ POSE">
+      <rect x="12" y="119" width="92" height="33" fill="#183b45" rx="6"/>
+      <text x="58.0" y="139.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">+ POSE</text>
+    </g>
+    <g data-action="ghost" data-value="" class="button" role="button" tabindex="0" aria-label="+ GHOST">
+      <rect x="112" y="119" width="94" height="33" fill="#183b45" rx="6"/>
+      <text x="159.0" y="139.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">+ GHOST</text>
+    </g>
+    <g data-action="save" data-value="" class="button" role="button" tabindex="0" aria-label="SAVE LIB">
+      <rect x="12" y="158" width="92" height="31" fill="#183b45" rx="6"/>
+      <text x="58.0" y="177.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">SAVE LIB</text>
+    </g>
+    <g data-action="delete" data-value="" class="button" role="button" tabindex="0" aria-label="DELETE">
+      <rect x="112" y="158" width="94" height="31" fill="#183b45" rx="6"/>
+      <text x="159.0" y="177.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">DELETE</text>
+    </g>
+    <g id="poseListD"/>
+    <text x="12" y="540" fill="#86adb1" font-size="10">EDIT = AUTO CACHE · SAVE = LIBRARY</text>
+    <text x="12" y="559" fill="#86adb1" font-size="11">Hold a key: multiselect</text>
+    <text x="237" y="79" fill="#a3e6d0" font-size="12" font-weight="800">STAGE / JOINT HINGES</text>
+    <g data-action="mode" data-value="ROTATE" class="button primary" role="button" tabindex="0" aria-label="ROTATE">
+      <rect x="237" y="91" width="95" height="34" fill="#183b45" rx="6"/>
+      <text x="284.5" y="112.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">ROTATE</text>
+    </g>
+    <g data-action="mode" data-value="FLIP" class="button" role="button" tabindex="0" aria-label="FLIP">
+      <rect x="338" y="91" width="83" height="34" fill="#183b45" rx="6"/>
+      <text x="379.5" y="112.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">FLIP</text>
+    </g>
+    <g data-action="axis-cycle" data-value="" class="button" role="button" tabindex="0" aria-label="XY">
+      <rect x="427" y="91" width="35" height="34" fill="#183b45" rx="6"/>
+      <text x="444.5" y="112.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">XY</text>
+    </g>
+    <g data-action="zoom-out" data-value="" class="button" role="button" tabindex="0" aria-label="ZOOM −">
+      <rect x="735" y="91" width="82" height="34" fill="#183b45" rx="6"/>
+      <text x="776.0" y="112.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">ZOOM −</text>
+    </g>
+    <g data-action="zoom-in" data-value="" class="button" role="button" tabindex="0" aria-label="ZOOM +">
+      <rect x="823" y="91" width="82" height="34" fill="#183b45" rx="6"/>
+      <text x="864.0" y="112.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">ZOOM +</text>
+    </g>
+    <text x="914" y="112" fill="#a3d4cb" font-size="11" id="zoomD">100%</text>
+    <rect x="219" y="129" width="811" height="496" fill="#0e2d37" id="stageBgD"/>
+    <g id="stageD" clip-path="url(#clipStageD)"/>
+    <text x="237" y="609" fill="#83afb4" font-size="10">TAP joint: select · SWIPE: manipulate · empty SWIPE: pan</text>
+    <text x="1046" y="82" fill="#a6ecd5" font-size="12" font-weight="800">INSPECTOR</text>
+    <text x="1046" y="111" fill="#94b4b6" font-size="11">Selected joints</text>
+    <text x="1046" y="137" fill="#d6e7e1" font-size="12" id="jointStatusD">—</text>
+    <text x="1046" y="171" fill="#92b3ba" font-size="10" id="modeDescription">Mode: rotate limb about hinge</text>
+    <g data-action="axis" data-value="X" class="button" role="button" tabindex="0" aria-label="X">
+      <rect x="1045" y="196" width="51" height="31" fill="#183b45" rx="6"/>
+      <text x="1070.5" y="215.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">X</text>
+    </g>
+    <g data-action="axis" data-value="Y" class="button" role="button" tabindex="0" aria-label="Y">
+      <rect x="1101" y="196" width="51" height="31" fill="#183b45" rx="6"/>
+      <text x="1126.5" y="215.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">Y</text>
+    </g>
+    <g data-action="axis" data-value="XY" class="button" role="button" tabindex="0" aria-label="XY">
+      <rect x="1157" y="196" width="68" height="31" fill="#183b45" rx="6"/>
+      <text x="1191.0" y="215.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">XY</text>
+    </g>
+    <text x="1045" y="246" fill="#7fa6b0" font-size="10">Axis locks only on MOVE</text>
+    <text x="1045" y="288" fill="#b9e8d1" font-size="11">FLOOR</text>
+    <text x="1045" y="308" fill="#96b1b9" font-size="10">Never cross: contact clamp</text>
+    <text x="1045" y="352" fill="#a1e2cd" font-size="11">REFERENCE GUIDES</text>
+    <text x="1045" y="372" fill="#94b2b7" font-size="10">Frozen saved poses</text>
+    <text x="1045" y="388" fill="#94b2b7" font-size="10">Live empty ghost poses</text>
+    <text x="1045" y="404" fill="#94b2b7" font-size="10">Closer to playhead = darker</text>
+    <g data-action="play" data-value="" class="button" role="button" tabindex="0" aria-label="▶">
+      <rect x="233" y="638" width="44" height="31" fill="#183b45" rx="6"/>
+      <text x="255.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">▶</text>
+    </g>
+    <g data-action="stop" data-value="" class="button" role="button" tabindex="0" aria-label="■">
+      <rect x="281" y="638" width="44" height="31" fill="#183b45" rx="6"/>
+      <text x="303.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">■</text>
+    </g>
+    <g data-action="copy" data-value="" class="button" role="button" tabindex="0" aria-label="COPY">
+      <rect x="329" y="638" width="71" height="31" fill="#183b45" rx="6"/>
+      <text x="364.5" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">COPY</text>
+    </g>
+    <g data-action="paste" data-value="" class="button" role="button" tabindex="0" aria-label="PASTE">
+      <rect x="403" y="638" width="72" height="31" fill="#183b45" rx="6"/>
+      <text x="439.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">PASTE</text>
+    </g>
+    <g data-action="undo" data-value="" class="button" role="button" tabindex="0" aria-label="UNDO">
+      <rect x="478" y="638" width="70" height="31" fill="#183b45" rx="6"/>
+      <text x="513.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">UNDO</text>
+    </g>
+    <g data-action="redo" data-value="" class="button" role="button" tabindex="0" aria-label="REDO">
+      <rect x="551" y="638" width="69" height="31" fill="#183b45" rx="6"/>
+      <text x="585.5" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">REDO</text>
+    </g>
+    <g data-action="ref" data-value="" class="button" role="button" tabindex="0" aria-label="REF OFF">
+      <rect x="625" y="638" width="86" height="31" fill="#183b45" rx="6"/>
+      <text x="668.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">REF OFF</text>
+    </g>
+    <g data-action="export-svg" data-value="" class="button" role="button" tabindex="0" aria-label="SVG ↓">
+      <rect x="715" y="638" width="70" height="31" fill="#183b45" rx="6"/>
+      <text x="750.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">SVG ↓</text>
+    </g>
+    <g data-action="export-json" data-value="" class="button" role="button" tabindex="0" aria-label="JSON ↓">
+      <rect x="788" y="638" width="76" height="31" fill="#183b45" rx="6"/>
+      <text x="826.0" y="657.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">JSON ↓</text>
+    </g>
+    <text x="881" y="660" fill="#a4edd2" font-size="13" id="timeD">0.00 s</text>
+    <text x="235" y="780" fill="#8db0b6" font-size="10">Pinch / wheel zoom · drag blank to pan · drag head to seek</text>
+    <rect x="235" y="684" width="780" height="69" fill="#17323d" opacity=".2" id="timelineBgD"/>
+    <g id="timelineD"/>
+    <rect x="1030" y="640" width="222" height="137" fill="#102c36" rx="6"/>
+    <text x="1043" y="661" fill="#9adbc3" font-size="11">EVENT LOG</text>
+    <text x="1043" y="689" fill="#cfdfd9" font-size="11" id="messageD">Ready</text>
+    <g id="libraryPanelD"/>
+  </g>
+  <g id="mobileLayout" style="display:none">
+    <rect x="0" y="0" width="400" height="800" fill="#0a2029"/>
+    <rect x="0" y="0" width="400" height="48" fill="#15333c"/>
+    <text x="13" y="31" fill="#a7f0d7" font-size="19" font-weight="800">ACROLAB</text>
+    <text x="132" y="31" fill="#a4bfc1" font-size="12">SVG · v0.5</text>
+    <text x="340" y="29" fill="#d5b581" font-size="10">DESIGN</text>
+    <rect x="0" y="48" width="400" height="48" fill="#102c34"/>
+    <g data-action="mode" data-value="ROTATE" class="button primary" role="button" tabindex="0" aria-label="ROTATE">
+      <rect x="8" y="55" width="89" height="33" fill="#183b45" rx="6"/>
+      <text x="52.5" y="75.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">ROTATE</text>
+    </g>
+    <g data-action="mode" data-value="FLIP" class="button" role="button" tabindex="0" aria-label="FLIP">
+      <rect x="103" y="55" width="76" height="33" fill="#183b45" rx="6"/>
+      <text x="141.0" y="75.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">FLIP</text>
+    </g>
+    <g data-action="axis-cycle" data-value="" class="button" role="button" tabindex="0" aria-label="XY">
+      <rect x="185" y="55" width="35" height="33" fill="#183b45" rx="6"/>
+      <text x="202.5" y="75.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">XY</text>
+    </g>
+    <g data-action="zoom-out" data-value="" class="button" role="button" tabindex="0" aria-label="−">
+      <rect x="308" y="55" width="37" height="33" fill="#183b45" rx="6"/>
+      <text x="326.5" y="75.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">−</text>
+    </g>
+    <g data-action="zoom-in" data-value="" class="button" role="button" tabindex="0" aria-label="+">
+      <rect x="351" y="55" width="37" height="33" fill="#183b45" rx="6"/>
+      <text x="369.5" y="75.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">+</text>
+    </g>
+    <rect x="0" y="96" width="400" height="422" fill="#0e2d37" id="stageBgM"/>
+    <text x="12" y="119" fill="#a5ebd2" font-size="11" id="jointStatusM">Joint</text>
+    <text x="353" y="119" fill="#8bbfba" font-size="10" id="zoomM">100%</text>
+    <g id="stageM" clip-path="url(#clipStageM)"/>
+    <rect x="0" y="519" width="400" height="39" fill="#102b34"/>
+    <g data-action="add" data-value="" class="button" role="button" tabindex="0" aria-label="+ KEY">
+      <rect x="6" y="524" width="67" height="30" fill="#183b45" rx="6"/>
+      <text x="39.5" y="543.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">+ KEY</text>
+    </g>
+    <g data-action="ghost" data-value="" class="button" role="button" tabindex="0" aria-label="GHOST">
+      <rect x="77" y="524" width="73" height="30" fill="#183b45" rx="6"/>
+      <text x="113.5" y="543.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">GHOST</text>
+    </g>
+    <g data-action="save" data-value="" class="button" role="button" tabindex="0" aria-label="SAVE LIB">
+      <rect x="155" y="524" width="65" height="30" fill="#183b45" rx="6"/>
+      <text x="187.5" y="543.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">SAVE LIB</text>
+    </g>
+    <g data-action="delete" data-value="" class="button" role="button" tabindex="0" aria-label="DELETE">
+      <rect x="226" y="524" width="60" height="30" fill="#183b45" rx="6"/>
+      <text x="256.0" y="543.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">DELETE</text>
+    </g>
+    <g data-action="ref" data-value="" class="button" role="button" tabindex="0" aria-label="REF OFF">
+      <rect x="291" y="524" width="103" height="30" fill="#183b45" rx="6"/>
+      <text x="342.5" y="543.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">REF OFF</text>
+    </g>
+    <rect x="0" y="559" width="400" height="130" fill="#0f2832"/>
+    <text x="12" y="577" fill="#aad8cb" font-size="10">TIMELINE · tap selects · double tap edits</text>
+    <g id="timelineM"/>
+    <text x="327" y="576" fill="#baf1d9" font-size="11" id="timeM">0.00 s</text>
+    <rect x="0" y="689" width="400" height="111" fill="#102b35"/>
+    <g data-action="play" data-value="" class="button" role="button" tabindex="0" aria-label="▶">
+      <rect x="8" y="696" width="55" height="31" fill="#183b45" rx="6"/>
+      <text x="35.5" y="715.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">▶</text>
+    </g>
+    <g data-action="stop" data-value="" class="button" role="button" tabindex="0" aria-label="■">
+      <rect x="68" y="696" width="55" height="31" fill="#183b45" rx="6"/>
+      <text x="95.5" y="715.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">■</text>
+    </g>
+    <g data-action="copy" data-value="" class="button" role="button" tabindex="0" aria-label="COPY">
+      <rect x="128" y="696" width="82" height="31" fill="#183b45" rx="6"/>
+      <text x="169.0" y="715.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">COPY</text>
+    </g>
+    <g data-action="paste" data-value="" class="button" role="button" tabindex="0" aria-label="PASTE">
+      <rect x="215" y="696" width="82" height="31" fill="#183b45" rx="6"/>
+      <text x="256.0" y="715.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">PASTE</text>
+    </g>
+    <g data-action="library-toggle" data-value="" class="button" role="button" tabindex="0" aria-label="LIBRARY">
+      <rect x="302" y="696" width="90" height="31" fill="#183b45" rx="6"/>
+      <text x="347.0" y="715.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">LIBRARY</text>
+    </g>
+    <g data-action="undo" data-value="" class="button" role="button" tabindex="0" aria-label="UNDO">
+      <rect x="8" y="738" width="92" height="31" fill="#183b45" rx="6"/>
+      <text x="54.0" y="757.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">UNDO</text>
+    </g>
+    <g data-action="redo" data-value="" class="button" role="button" tabindex="0" aria-label="REDO">
+      <rect x="105" y="738" width="92" height="31" fill="#183b45" rx="6"/>
+      <text x="151.0" y="757.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">REDO</text>
+    </g>
+    <g data-action="export-svg" data-value="" class="button" role="button" tabindex="0" aria-label="SVG ↓">
+      <rect x="201" y="738" width="92" height="31" fill="#183b45" rx="6"/>
+      <text x="247.0" y="757.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">SVG ↓</text>
+    </g>
+    <g data-action="export-json" data-value="" class="button" role="button" tabindex="0" aria-label="JSON ↓">
+      <rect x="298" y="738" width="94" height="31" fill="#183b45" rx="6"/>
+      <text x="345.0" y="757.5" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">JSON ↓</text>
+    </g>
+    <text x="12" y="790" fill="#aec8c3" font-size="9" id="messageM">Ready</text>
+    <g id="libraryPanelM"/>
+  </g>
+  <g id="rigCamera">
+    <g id="guideLayer"/>
+    <g id="rig-placement">
+      <g id="part-thigh" data-part="thigh" inkscape-label="thigh" inkscape:label="part / thigh" transform="rotate(0 100.09716 138.51463)" class="part-target" style="cursor:crosshair;touch-action:none">
+        <a xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="orig-thigh" inkscape:label="thigh" inkscape:transform-center-x="0.43113121" inkscape:transform-center-y="26.297121" style="display:inline;opacity:1" data-part="hip">
+          <path style="display:inline;fill:#d3bc5f;fill-opacity:1;stroke-width:0.264583" d="m 99.812633,203.44753 c -8.775491,-1.39376 -5.794888,-9.43604 -7.138889,-22.30297 -1.344011,-12.86695 -4.566591,-13.50971 -6.201899,-25.87975 -1.635308,-12.37004 -0.539514,-27.42255 12.771973,-29.05587 13.311492,-1.63332 17.466592,17.18269 13.959672,38.53441 -3.50692,21.35172 -4.61537,40.09795 -13.390857,38.70418 z" id="path10" sodipodi:nodetypes="zzzzzz" inkscape:label="thigh" inkscape:transform-center-x="-1.0789508" inkscape:transform-center-y="-36.368308"/>
+          <path style="display:inline;mix-blend-mode:normal;fill:#008000;fill-opacity:1;stroke-width:0.264583" d="m 86.471848,155.26481 c -3.703757,-11.9153 -2.308577,-29.15488 14.345022,-29.15488 16.65361,0 12.93419,16.05485 13.48935,28.36645 -5.60331,-0.26341 -9.92894,-0.0733 -13.16379,0 -11.208416,0.25382 -4.289807,0 -14.670582,0.78843 z" id="path10-1" sodipodi:nodetypes="czcsc" inkscape:label="shorts" inkscape:transform-center-x="-1.0789508" inkscape:transform-center-y="-36.368308"/>
+        </a>
+        <g id="part-shank" data-part="shank" inkscape-label="shank" inkscape:label="part / shank" transform="rotate(0 100.09716 197.09708)" class="part-target" style="cursor:crosshair;touch-action:none">
+          <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;fill:#d3bc5f;fill-opacity:1;stroke-width:0.264583;opacity:1" d="m 101.43731,192.55007 c -9.923929,-3.27719 -17.537599,23.80376 -12.327272,41.35022 5.210326,17.54646 3.247646,26.54975 9.881861,32.70174 6.098751,13.72217 7.405171,-9.90556 6.885941,-13.5326 -0.4682,-3.27063 -3.35848,-23.7423 -1.79512,-35.97648 2.66262,-20.83661 3.86894,-22.08397 -2.64541,-24.54288 z" id="orig-shank" sodipodi:nodetypes="czcssc" inkscape:label="shank" inkscape:transform-center-x="1.8229279" inkscape:transform-center-y="27.051631" data-part="knee"/>
+          <g id="part-rearfoot" data-part="rearfoot" inkscape-label="rearfoot" inkscape:label="part / rearfoot" transform="rotate(0 100.09716 254.85054)" class="part-target" style="cursor:crosshair;touch-action:none">
+            <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;opacity:1;fill:#d3bc5f;fill-opacity:1;stroke-width:0.264583" d="m 111.34713,261.84178 c 5.19524,2.24285 2.26519,6.3827 0.7542,6.78076 -0.71488,0.29943 0.0362,2.15514 -4.63789,2.22371 -3.28359,0.0482 -6.10439,1.04361 -9.005396,1.04361 -5.0342,0 -6.68698,-1.19611 -7.010935,-5.8259 1.059591,-5.57737 2.131715,-2.59789 2.618534,-12.28378 0.110552,-2.19959 3.008532,-5.09611 6.112887,-5.05489 3.19424,0.0424 5.45389,2.5849 5.7882,5.59588 -0.29599,1.04243 0.0313,3.45466 0.66682,4.28278 1.77451,2.31245 2.44109,2.19582 4.71358,3.23783 z" id="orig-rearfoot" sodipodi:nodetypes="ccsscsscsc" inkscape:label="rearfoot" inkscape:transform-center-x="-2.7768327" inkscape:transform-center-y="5.5628105" data-part="ankle"/>
+            <g id="part-forefoot" data-part="forefoot" inkscape-label="forefoot" inkscape:label="part / forefoot" transform="rotate(0 110.67408263983556 265.34896110289606)" class="part-target" style="cursor:crosshair;touch-action:none">
+              <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.264583" d="m 118.22571,264.10717 c 5.00973,0.60994 7.71541,7.78271 -2.93498,7.78269 -10.65038,-2e-5 -11.44321,-3.70207 -12.00832,-4.87111 -0.88011,-3.91156 1.88011,-8.6002 14.9433,-2.91158 z" id="orig-forefoot" sodipodi:nodetypes="czcc" inkscape:label="forefoot" inkscape:transform-center-x="-2.8920399" inkscape:transform-center-y="1.5262895" data-part="midtarsal"/>
+              <g id="part-toes" data-part="toes" inkscape-label="toes" inkscape:label="part / toes" transform="rotate(0 120.32435006614124 267.5605654683527)" class="part-target" style="cursor:crosshair;touch-action:none">
+                <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;opacity:1;fill:#d3bc5f;fill-opacity:1;stroke-width:0.264583" d="m 121.05354,265.06734 c 3.57077,0.83905 0.13757,0.31299 6.03541,1.28162 4.00422,2.43169 3.69549,1.91706 5.64986,2.17512 0.64992,1.25514 0.66056,3.36578 -4.33878,3.3658 -4.99935,2e-5 -4.51381,-0.4251 -7.07568,-0.85536 -7.35048,-1.47662 -2.2971,-6.34027 -0.27081,-5.96718 z" id="orig-toes" sodipodi:nodetypes="ccczcc" inkscape:label="toes" inkscape:transform-center-x="-5.0824551" inkscape:transform-center-y="0.9285396" data-part="mtp"/>
+              </g>
+              <circle id="locator-mtp" cx="120.32435006614124" cy="267.5605654683527" r="0.02" opacity="0" pointer-events="none"/>
+              <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:2.00479" id="source-mark-mtp" cx="55.976929" cy="287.98123" inkscape:label="mtp" transform="rotate(-13.214053)" inkscape:transform-center-x="-9.6502693" inkscape:transform-center-y="2.2116051" r="1" data-original-id="path28" data-original-label="mtp" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+            </g>
+            <circle id="locator-midtarsal" cx="110.67408263983556" cy="265.34896110289606" r="0.02" opacity="0" pointer-events="none"/>
+            <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:0.891306" id="source-mark-midtarsal" cx="102.42177" cy="268.64215" inkscape:label="midtarsal" transform="rotate(-1.77076)" inkscape:transform-center-x="-10.576921" inkscape:transform-center-y="10.498422" r="1" data-original-id="path27" data-original-label="midtarsal" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+          </g>
+          <circle id="locator-ankle" cx="100.09716" cy="254.85054" r="0.02" opacity="0" pointer-events="none"/>
+          <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:35.8653" id="source-mark-ankle" cx="100.09716" cy="254.85054" inkscape:label="ankle" r="1" data-original-id="path26" data-original-label="ankle" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+        </g>
+        <circle id="locator-knee" cx="100.09716" cy="197.09708" r="0.02" opacity="0" pointer-events="none"/>
+        <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:1.52574" id="source-mark-knee" cx="100.09716" cy="197.09708" inkscape:label="knee" r="1" data-original-id="path25" data-original-label="knee" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+      </g>
+      <g id="part-pelvis" data-part="pelvis" inkscape-label="pelvis" inkscape:label="part / pelvis" class="part-target" style="cursor:crosshair;touch-action:none">
+        <g id="part-lumbar" data-part="lumbar" inkscape-label="lumbar" inkscape:label="part / lumbar" transform="rotate(0 100.097157024758 117.4476490972709)" class="part-target" style="cursor:crosshair;touch-action:none">
+          <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#008000;fill-opacity:1;opacity:1;stroke-width:0.247885" d="m 106.00484,87.587091 c -7.722405,-2.226343 -16.878757,3.522884 -16.841871,9.590785 0.09317,15.327144 -1.291845,21.903344 0.125762,29.486384 0.857684,4.58791 12.771239,3.66437 21.355419,-1.37194 5.91244,-3.46882 9.25819,-26.777659 7.13543,-31.858956 -3.43211,-8.215537 -11.77474,-5.846273 -11.77474,-5.846273 z" id="orig-lumbar" sodipodi:nodetypes="ssssss" inkscape:label="lumbar" data-part="lower_trunk"/>
+          <g id="part-thorax" data-part="thorax" inkscape-label="thorax" inkscape:label="part / thorax" transform="rotate(0 100.0931 97.571838)" class="part-target" style="cursor:crosshair;touch-action:none">
+            <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;opacity:1;fill:#008000;fill-opacity:1;stroke-width:0.264583" d="m 95.857838,104.94984 c 5.686042,4.98358 20.587102,3.02228 24.706792,-13.808586 1.84145,-7.523174 -5.86098,-24.628366 -7.60493,-26.425699 -4.74707,-4.89239 -6.36886,-9.338259 -13.892962,-9.557304 -7.3981,-0.215377 -7.1199,1.090038 -8.38342,3.083825 -3.96399,6.255017 -3.37037,33.391042 -1.16809,39.657343 1.61779,4.603241 -1.3751,0.286175 6.34261,7.050421 z" id="orig-thorax" sodipodi:nodetypes="sssssss" inkscape:label="thorax" inkscape:transform-center-x="-4.5836717" inkscape:transform-center-y="-16.276714" data-part="upper_trunk"/>
+            <g id="part-neck" data-part="neck" inkscape-label="neck" inkscape:label="part / neck" transform="rotate(0 100.09716 58.253555)" class="part-target" style="cursor:crosshair;touch-action:none">
+              <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.264583" d="m 99.977617,66.506745 c -7.473186,0 -9.170053,-8.059205 -7.67811,-11.030059 0.700001,-1.393888 2.971848,-8.745237 3.043623,-13.04667 0.02262,-1.355831 1.680505,-4.753409 4.72208,-4.495053 4.06793,0.345536 12.97348,0.480559 13.28451,3.924156 0.65997,7.307057 -4.74525,9.619293 -4.71094,12.474092 0.0587,4.882751 -1.18798,12.173534 -8.661163,12.173534 z" id="orig-neck" sodipodi:nodetypes="zsssssz" inkscape:label="neck" inkscape:transform-center-y="7.8851112" inkscape:transform-center-x="-0.21608059" data-part="neck_base"/>
+              <g id="part-head" data-part="head" inkscape-label="head" inkscape:label="part / head" transform="rotate(0 100.09311 42.365467)" class="part-target" style="cursor:crosshair;touch-action:none">
+                <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;stroke-width:0.264583;opacity:1" d="m 90.472454,38.163147 c 1.251231,4.826828 7.437098,5.181369 11.582036,8.904663 5.12814,4.606482 10.93543,4.736766 15.28436,3.313737 1.50455,-0.554465 0.79056,-4.199582 1.04572,-5.796124 0.0452,-0.28291 -2.61815,-0.826506 -2.1971,-1.08696 0.60636,-0.375075 2.02798,0.320733 2.1366,0 0.34462,-1.017608 -0.92035,-4.335788 -0.37418,-4.276384 1.3698,0.148984 3.03193,-0.941064 2.62402,-1.508381 -1.08734,-1.512248 -0.78878,-1.022571 -3.23506,-4.621227 1.51558,-2.767723 -0.19331,-2.474046 -0.5072,-4.625475 -1.50398,-10.308573 -32.101446,-12.455511 -26.359196,9.696149 z" id="orig-head" sodipodi:nodetypes="sscssssscsss" inkscape:label="head" inkscape:highlight-color="#ff8800" data-part="head_neck"/>
+              </g>
+              <circle id="locator-head_neck" cx="100.09311" cy="42.365467" r="0.02" opacity="0" pointer-events="none"/>
+              <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:1.72469" id="source-mark-head_neck" inkscape:label="head_neck" sodipodi:arc-type="arc" sodipodi:type="arc" sodipodi:cx="100.09311" sodipodi:cy="42.365467" sodipodi:rx="1" sodipodi:ry="1" sodipodi:start="0.0036564355" sodipodi:end="0" d="m 101.0931,42.369123 a 1,1 0 0 1 -1.00273,0.99634 1,1 0 0 1 -0.997259,-1.001824 1,1 0 0 1 1.000909,-0.998172 1,1 0 0 1 0.99909,1" sodipodi:open="true" data-original-id="path19" data-original-label="head_neck" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+            </g>
+            <g id="part-upper_arm" data-part="upper_arm" inkscape-label="upper_arm" inkscape:label="part / upper_arm" transform="rotate(0 100.09715700297645 64.17275230566021)" class="part-target" style="cursor:crosshair;touch-action:none">
+              <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.264583" d="m 109.96344,107.8434 c 6.56945,-1.15474 4.28929,-12.001656 2.72284,-24.021668 -1.56645,-12.020014 -3.1156,-30.302378 -15.086354,-27.133387 -11.970756,3.16899 -4.884082,18.184067 0.735995,31.768736 5.620069,13.584669 5.058079,20.541039 11.627519,19.386319 z" id="orig-upper_arm" sodipodi:nodetypes="zzzzz" inkscape:label="upper_arm" inkscape:transform-center-y="18.490415" inkscape:transform-center-x="-3.9442794" data-part="shoulder"/>
+              <g id="part-forearm" data-part="forearm" inkscape-label="forearm" inkscape:label="part / forearm" transform="rotate(0 108.57068372386584 101.59067342610028)" class="part-target" style="cursor:crosshair;touch-action:none">
+                <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.32628" d="m 107.72199,96.950774 c -7.40563,0.573451 -3.73043,18.047846 0.15451,23.980466 3.88494,5.93261 4.45439,16.82239 8.32472,16.0955 3.87031,-0.72702 2.71391,-2.10663 0.94998,-16.30898 -1.7639,-14.20237 -2.02358,-24.340439 -9.42921,-23.766986 z" id="orig-forearm" sodipodi:nodetypes="zzzzz" inkscape:label="forearm" inkscape:transform-center-y="15.403826" inkscape:transform-center-x="-2.5489094" data-part="elbow"/>
+                <g id="part-hand" data-part="hand" inkscape-label="hand" inkscape:label="part / hand" transform="rotate(0 115.93355764801623 134.1040626539308)" class="part-target" style="cursor:crosshair;touch-action:none">
+                  <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.264583" d="m 118.83152,146.48766 c 0.91476,-0.32294 1.17976,-1.55915 0.92041,-6.33764 -0.1203,-2.21678 -0.25565,-3.30464 -0.62126,-4.5863 -0.62037,-1.57654 -0.0721,-3.02905 -2.15345,-3.68253 -2.32192,-0.72939 -3.76607,1.6958 -3.48391,3.16271 0.18548,0.96437 -0.25034,0.92348 0.20924,2.49984 0.45929,1.57631 1.83084,2.84921 2.36765,3.97794 1.45004,3.04879 0.53561,5.75167 2.76136,4.96597 z" id="orig-hand" sodipodi:nodetypes="sscsszss" inkscape:label="hand" inkscape:transform-center-y="5.0823018" inkscape:transform-center-x="-0.71872829" data-part="wrist"/>
+                  <g id="part-fingers" data-part="fingers" inkscape-label="fingers" inkscape:label="part / fingers" transform="rotate(0 118.47048092125576 145.3316369826215)" class="part-target" style="cursor:crosshair;touch-action:none">
+                    <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#d3bc5f;fill-opacity:1;opacity:1;stroke-width:0.264583" d="m 121.44193,155.17386 c -1.45464,-1.04926 -1.04886,-1.18094 -2.0992,-4.35548 -1.05032,-3.17456 -2.96547,-6.00037 -1.16908,-6.41236 1.79642,-0.41192 1.22013,0.93981 2.54296,5.86145 1.32284,4.92167 2.17994,5.95563 0.72542,4.90637 z" id="orig-fingers" sodipodi:nodetypes="zzzzz" inkscape:label="fingers" inkscape:transform-center-y="15.836826" inkscape:transform-center-x="-3.8844515" data-part="collective_finger"/>
+                  </g>
+                  <circle id="locator-collective_finger" cx="118.47048092125576" cy="145.3316369826215" r="0.02" opacity="0" pointer-events="none"/>
+                  <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:0.31871" id="source-mark-collective_finger" cx="152.29314" cy="109.37705" inkscape:label="collective_fingers" r="1" transform="rotate(15.128061)" inkscape:transform-center-y="11.227573" inkscape:transform-center-x="-2.536923" data-original-id="path40" data-original-label="collective_fingers" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+                </g>
+                <circle id="locator-wrist" cx="115.93355764801623" cy="134.1040626539308" r="0.02" opacity="0" pointer-events="none"/>
+                <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:1.97922" id="source-mark-wrist" cx="133.57352" cy="116.54443" inkscape:label="wrist" r="1" transform="rotate(8.0513685)" inkscape:transform-center-x="-7.3628722" inkscape:transform-center-y="32.513392" data-original-id="path21" data-original-label="wrist" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+              </g>
+              <circle id="locator-elbow" cx="108.57068372386584" cy="101.59067342610028" r="0.02" opacity="0" pointer-events="none"/>
+              <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:1.28227" id="source-mark-elbow" cx="114.44137" cy="94.928558" inkscape:label="elbow" r="1" transform="rotate(3.4222151)" inkscape:transform-center-y="37.417921" inkscape:transform-center-x="-8.4735246" data-original-id="path23" data-original-label="elbow" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+            </g>
+            <circle id="locator-neck_base" cx="100.09716" cy="58.253555" r="0.02" opacity="0" pointer-events="none"/>
+            <circle id="locator-shoulder" cx="100.09715700297645" cy="64.17275230566021" r="0.02" opacity="0" pointer-events="none"/>
+            <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;fill:#800000;fill-opacity:0.652798;stroke-width:2.16805" id="source-mark-neck_base" inkscape:label="neck_base" sodipodi:arc-type="arc" sodipodi:type="arc" sodipodi:cx="100.09716" sodipodi:cy="58.253555" sodipodi:rx="1" sodipodi:ry="1" sodipodi:start="0.11515987" sodipodi:end="0" d="m 101.09054,58.368461 a 1,1 0 0 1 -1.07964,0.881367 1,1 0 0 1 -0.912082,-1.053821 1,1 0 0 1 1.027132,-0.942037 1,1 0 0 1 0.97121,0.999585" sodipodi:open="true" data-original-id="path19-1" data-original-label="neck_base" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+            <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:13.4759" id="source-mark-shoulder" cx="74.640274" cy="92.554916" inkscape:label="shoulder" transform="rotate(-18.451678)" r="1" data-original-id="path18" data-original-label="shoulder" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+          </g>
+          <circle id="locator-upper_trunk" cx="100.0931" cy="97.571838" r="0.02" opacity="0" pointer-events="none"/>
+          <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:2.87288" id="source-mark-upper_trunk" cx="100.0931" cy="97.571838" inkscape:label="upper_trunk" r="1" data-original-id="path20" data-original-label="upper_trunk" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+        </g>
+        <path xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" style="display:inline;mix-blend-mode:normal;fill:#008000;fill-opacity:1;stroke-width:0.264583;opacity:1" d="m 81.230492,136.75009 c 0.03875,5.13071 3.344076,11.41199 8.320786,14.65447 4.421529,2.88076 8.552214,2.46131 12.406822,2.79233 11.91004,1.02278 13.76508,-8.69964 12.85559,-18.19173 -2.16176,-22.56177 5.53576,-18.18589 -14.69089,-18.51389 -16.944183,-0.27478 -18.929357,14.35318 -18.892308,19.25882 z" id="orig-pelvis" sodipodi:nodetypes="ssssss" inkscape:label="pelvis" inkscape:transform-center-x="0.36944068" inkscape:transform-center-y="2.3869719" data-part="hip"/>
+        <circle id="locator-lower_trunk" cx="100.097157024758" cy="117.4476490972709" r="0.02" opacity="0" pointer-events="none"/>
+        <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:0.264583" id="source-mark-lower_trunk" cx="94.878471" cy="121.70237" inkscape:label="lower_trunk" r="1" transform="rotate(-2.5001983)" data-original-id="path22" data-original-label="lower_trunk" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+      </g>
+      <circle id="locator-hip" cx="100.09716" cy="138.51463" r="0.02" opacity="0" pointer-events="none"/>
+      <circle style="display:inline;opacity:1;fill:#800000;fill-opacity:0.652798;stroke-width:3.27196" id="source-mark-hip" cx="100.09716" cy="138.51463" inkscape:label="hip" r="1" data-original-id="path24" data-original-label="hip" class="source-joint-mark" visibility="hidden" pointer-events="none"/>
+    </g>
+  </g>
+  <g id="jointHandles">
+    <g id="handle-hip" class="handle" data-joint="hip" role="button" aria-label="Joint hip" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-knee" class="handle" data-joint="knee" role="button" aria-label="Joint knee" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-ankle" class="handle" data-joint="ankle" role="button" aria-label="Joint ankle" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-midtarsal" class="handle" data-joint="midtarsal" role="button" aria-label="Joint midtarsal" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-mtp" class="handle" data-joint="mtp" role="button" aria-label="Joint mtp" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-lower_trunk" class="handle" data-joint="lower_trunk" role="button" aria-label="Joint lower_trunk" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-upper_trunk" class="handle" data-joint="upper_trunk" role="button" aria-label="Joint upper_trunk" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-neck_base" class="handle" data-joint="neck_base" role="button" aria-label="Joint neck_base" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-head_neck" class="handle" data-joint="head_neck" role="button" aria-label="Joint head_neck" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-shoulder" class="handle" data-joint="shoulder" role="button" aria-label="Joint shoulder" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-elbow" class="handle" data-joint="elbow" role="button" aria-label="Joint elbow" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-wrist" class="handle" data-joint="wrist" role="button" aria-label="Joint wrist" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+    <g id="handle-collective_finger" class="handle" data-joint="collective_finger" role="button" aria-label="Joint collective_finger" tabindex="0">
+      <circle class="hit" cx="0" cy="0" r="17"/>
+      <circle class="dot" cx="0" cy="0" r="4.1"/>
+    </g>
+  </g>
+  <g id="axisMenu" style="display:none">
+    <rect x="0" y="0" width="124" height="113" fill="#193e47" rx="8" stroke="#79c6b3"/>
+    <g data-action="axis" data-value="XY" class="button" role="button" tabindex="0" aria-label="Free XY">
+      <rect x="5" y="5" width="114" height="30" fill="#183b45" rx="6"/>
+      <text x="62.0" y="24.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">Free XY</text>
+    </g>
+    <g data-action="axis" data-value="X" class="button" role="button" tabindex="0" aria-label="Lock X">
+      <rect x="5" y="40" width="114" height="30" fill="#183b45" rx="6"/>
+      <text x="62.0" y="59.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">Lock X</text>
+    </g>
+    <g data-action="axis" data-value="Y" class="button" role="button" tabindex="0" aria-label="Lock Y">
+      <rect x="5" y="75" width="114" height="30" fill="#183b45" rx="6"/>
+      <text x="62.0" y="94.0" fill="#d6e7e1" font-size="11" text-anchor="middle" font-weight="700">Lock Y</text>
+    </g>
+  </g>
+  <script id="motionLabScript" type="application/x-acrolab-v05-frozen-source"><![CDATA[(()=>{'use strict';
+const NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id), $=s=>[...document.querySelectorAll(s)];
+const CHANNELS=['hip','knee','ankle','midtarsal','mtp','lower_trunk','upper_trunk','neck_base','head_neck','shoulder','elbow','wrist','collective_finger'];
+const LIMITS={hip:[-120,30],knee:[0,150],ankle:[-45,45],midtarsal:[-35,35],mtp:[-45,75],lower_trunk:[-35,35],upper_trunk:[-35,35],neck_base:[-45,45],head_neck:[-45,45],shoulder:[-185,185],elbow:[-150,0],wrist:[-80,80],collective_finger:[-100,12]};
+const SIGN={collective_finger:-1},PIVOT={"hip":[100.09716,138.51463],"knee":[100.09716,197.09708],"ankle":[100.09716,254.85054],"midtarsal":[110.67408263983556,265.34896110289606],"mtp":[120.32435006614124,267.5605654683527],"lower_trunk":[100.097157024758,117.4476490972709],"upper_trunk":[100.0931,97.571838],"neck_base":[100.09716,58.253555],"head_neck":[100.09311,42.365467],"shoulder":[100.09715700297645,64.17275230566021],"elbow":[108.57068372386584,101.59067342610028],"wrist":[115.93355764801623,134.1040626539308],"collective_finger":[118.47048092125576,145.3316369826215]};
+const PART={hip:'thigh',knee:'shank',ankle:'rearfoot',midtarsal:'forefoot',mtp:'toes',lower_trunk:'lumbar',upper_trunk:'thorax',neck_base:'neck',head_neck:'head',shoulder:'upper_arm',elbow:'forearm',wrist:'hand',collective_finger:'fingers'};
+const ID={};for(const [k,p] of Object.entries(PART))ID[p]=k;
+const PARENT={hip:null,knee:'hip',ankle:'knee',midtarsal:'ankle',mtp:'midtarsal',lower_trunk:null,upper_trunk:'lower_trunk',neck_base:'upper_trunk',head_neck:'neck_base',shoulder:'upper_trunk',elbow:'shoulder',wrist:'elbow',collective_finger:'wrist'};
+const SOURCE_SHA='7069ad3dfd8170e862f24e1a408848040807ccb1d569c340143ad75e34812835';
+const initBody=Object.fromEntries(CHANNELS.map(k=>[k,0]));
+const round=(n,d=3)=>Number(n.toFixed(d));const clone=p=>({body:{...p.body},placement:{...p.placement}});const key=id=>data.keys.find(k=>k.id===id);
+let data;try{data=JSON.parse($('acro-pose-data').textContent);}catch(e){throw Error('Corrupt embedded poses');}
+const CACHE_KEY='acrolab-svg-lab-v0.5-'+SOURCE_SHA;
+function persist(){try{localStorage.setItem(CACHE_KEY,JSON.stringify(data));}catch(_){/* SVG may be opened in restricted file viewers */}}
+try{const cached=localStorage.getItem(CACHE_KEY);if(cached){const d=JSON.parse(cached);if(d.rig?.svg_source_sha256===SOURCE_SHA&&d.rig?.visual_mapping==='svg-pivot-r4-original2-marks')data=d;}}catch(_){}
+let keys=()=>[...data.keys].sort((a,b)=>a.t-b.t||a.id.localeCompare(b.id));
+let mode='ROTATE',axis='OFF',selection=new Set(),multi=false,chosenKeys=new Set(),keyMulti=false,activeId='pose-01',time=0,draft=null,playing=false,raf=0,viewStart=0,viewSpan=3,stageZoom=1,compact=false,gesture=null,lastTap={id:'',at:0},uiDirty=true;
+let libraryOpen=false,stagePanX=0,stagePanY=0,stageStartPan=null;
+let refsOn=false,refs=new Map(),clipboard=null,history=[],redoStack=[],nseq=0,pointerTouches=new Map(),pinch=null,pressTimer=null,pressOwned=false,lastMsg='',lastMsgAt=0;
+const floorY=271.88986,canPose=k=>k?.kind!=='ghost',MAX_KEYS=100;
+function fail(msg){say(msg);return false;}function say(msg){lastMsg=msg;lastMsgAt=performance.now();for(const id of ['messageD','messageM'])$(id).textContent=msg.length>38?msg.slice(0,36)+'…':msg;}
+function validate(d){if(d?.schema!=='acrolab-svg-motion-experiment-v2'||d.rig?.id!=='mannequin2d-studio-rig'||d.rig.version!=='1')throw Error('Unsupported experiment/rig version');if(d.rig.visual_mapping!=='svg-pivot-r4-original2-marks'||d.rig.svg_source_sha256!==SOURCE_SHA)throw Error('Different SVG pivot mapping; explicit migration needed (v0.5)');if(!Number.isFinite(d.duration)||d.duration<=0||d.duration>600||!Array.isArray(d.keys)||d.keys.length>MAX_KEYS)throw Error('Invalid timeline');let ids=new Set(),ts=new Set(),poses=0;for(const k of d.keys){if(!k||typeof k.id!=='string'||ids.has(k.id)||!Number.isFinite(k.t)||k.t<0||k.t>d.duration||ts.has(k.t.toFixed(3)))throw Error('Bad key ID/time');ids.add(k.id);ts.add(k.t.toFixed(3));if(k.kind==='ghost')continue;if(k.kind!=='pose'||!k.body||!k.placement)throw Error('Bad pose');poses++;for(const name of CHANNELS)if(!Number.isFinite(k.body[name])||k.body[name]<LIMITS[name][0]||k.body[name]>LIMITS[name][1])throw Error('Articulation out of design domain: '+name);for(const f of ['x','y','ori'])if(!Number.isFinite(k.placement[f]))throw Error('Bad placement: '+f);}if(!poses)throw Error('At least one saved pose required');if(d.library!==undefined&&!Array.isArray(d.library))throw Error('Library format invalid');}
+validate(data);
+const sortedPoses=()=>keys().filter(canPose);
+function evaluate(t,withDraft=true){let list=sortedPoses();if(withDraft&&activeId&&canPose(key(activeId))){list=list.map(k=>k.id===activeId?{...k,body:{...draft?.body||k.body},placement:{...draft?.placement||k.placement}}:k);}const first=list[0],last=list.at(-1);if(t<=first.t)return clone(first);if(t>=last.t)return clone(last);let a=first,b=last;for(let i=0;i<list.length-1;i++){if(t>=list[i].t&&t<=list[i+1].t){a=list[i];b=list[i+1];break;}}const r=(t-a.t)/(b.t-a.t||1),f=data.interpolation==='smooth'?r*r*(3-2*r):r,out={body:{},placement:{}};for(const name of CHANNELS)out.body[name]=a.body[name]+(b.body[name]-a.body[name])*f;for(const name of ['x','y','ori'])out.placement[name]=a.placement[name]+(b.placement[name]-a.placement[name])*f;return out;}
+function ghostPose(k){return evaluate(k.t,true);}
+if(!Array.isArray(data.library))data.library=[];
+function initialDraft(){activeId='pose-01';if(!key(activeId))activeId=sortedPoses()[0]?.id||'';draft=clone(key(activeId));time=key(activeId)?.t||0;}
+initialDraft();
+function snapshot(){return JSON.stringify({data,selection:[...selection],chosenKeys:[...chosenKeys],activeId,time,draft,mode,axis,viewStart,viewSpan,stageZoom,stagePanX,stagePanY,libraryOpen,multi,keyMulti,refsOn,refs:[...refs]});}
+function saveUndo(state=null){history.push(state||snapshot());if(history.length>90)history.shift();redoStack=[];}
+function restore(s){const x=JSON.parse(s);data=x.data;selection=new Set(x.selection);chosenKeys=new Set(x.chosenKeys);activeId=x.activeId;time=x.time;draft=x.draft;mode=x.mode;axis=x.axis;viewStart=x.viewStart;viewSpan=x.viewSpan;stageZoom=x.stageZoom;stagePanX=x.stagePanX||0;stagePanY=x.stagePanY||0;libraryOpen=x.libraryOpen!==false;multi=x.multi;keyMulti=x.keyMulti;refsOn=x.refsOn;refs=new Map(x.refs);render();}
+function undo(){if(!history.length)return fail('Nothing to undo');cancelGesture(false);redoStack.push(snapshot());restore(history.pop());updateMeta();say('UNDO');}function redo(){if(!redoStack.length)return fail('Nothing to redo');cancelGesture(false);history.push(snapshot());restore(redoStack.pop());updateMeta();say('REDO');}
+function selectJoint(k,extend=false){if(!CHANNELS.includes(k))return;if(extend||multi){if(selection.has(k))selection.delete(k);else selection.add(k);}else selection=new Set([k]);render();}
+function selectKey(id,extend=false){if(!key(id))return;if(extend||keyMulti){if(chosenKeys.has(id))chosenKeys.delete(id);else chosenKeys.add(id);}else chosenKeys=new Set([id]);if(refsOn){const k=key(id);if(chosenKeys.has(id))pin(k);else if(refs.has(id))refs.get(id).deselected=true;}render();}
+function pin(k){if(!k)return;if(k.kind==='ghost')refs.set(k.id,{id:k.id,kind:'ghost',sourceT:k.t});else refs.set(k.id,{id:k.id,kind:'pose',sourceT:k.t,snapshot:clone(k.id===activeId?draft:k)});}
+function toggleRefs(){saveUndo();refsOn=!refsOn;if(!refsOn)refs.clear();else for(const id of chosenKeys)pin(key(id));render();say(refsOn?'REFERENCES ON · saved = frozen, ghosts = live':'REFERENCES OFF');}
+function arrange(t){time=Math.max(0,Math.min(data.duration,t));const editable=key(activeId);if(!editable||Math.abs(time-editable.t)>1e-6){activeId='';draft=evaluate(time,false);}render();}
+function editAt(id){const k=key(id);if(!k)return;pause();if(k.kind==='ghost'){activeId='';time=k.t;draft=ghostPose(k);say('GHOST · preview, editing creates authored key');}else{activeId=id;time=k.t;draft=clone(k);say('EDIT '+k.label+' · changes automatically retained');}chosenKeys=new Set([id]);render();}
+function chooseTime(t){time=Math.max(0,t);activeId='';draft=evaluate(time,false);render();}
+function freeTime(request,ignore=[]){const existing=data.keys.filter(k=>!ignore.includes(k.id)).map(k=>k.t);const clamp=v=>Math.max(0,Math.min(Math.max(data.duration,viewStart+viewSpan),round(v,3)));let test=clamp(request);if(!existing.some(x=>Math.abs(x-test)<0.0005))return test;for(let n=1;n<=150;n++){for(const sign of [1,-1]){test=clamp(request+n*0.01*sign);if(!existing.some(x=>Math.abs(x-test)<0.0005))return test;}}return null;}
+function addPose(kind='pose'){if(data.keys.length>=MAX_KEYS)return fail('Key capacity reached');const t=freeTime(time);if(t===null)return fail('No room for another key');saveUndo();const id='k'+Date.now().toString(36)+'-'+(++nseq);const k=kind==='ghost'?{id,kind:'ghost',label:'Ghost '+(data.keys.length+1),t}:{id,kind:'pose',label:'Pose '+(data.keys.length+1),t,body:{...draft.body},placement:{...draft.placement}};data.keys.push(k);data.duration=Math.max(data.duration,t);updateMeta();chosenKeys=new Set([id]);if(refsOn)pin(k);render();say('Created '+kind.toUpperCase()+' at '+t.toFixed(2)+'s · double-tap to edit');}
+function savePose(){saveUndo();const entry={id:'lib-'+Date.now().toString(36)+'-'+(++nseq),name:'Pose '+(data.library.length+1),body:{...draft.body},placement:{...draft.placement},sourceTime:round(time,3),kind:'BodyPose',evidence:'DESIGN'};data.library.unshift(entry);updateMeta();render();say('Saved in library · '+entry.name);}
+function commitDraft(before){if(!draft)return;const k=key(activeId);if(k&&k.kind==='pose'){k.body={...draft.body};k.placement={...draft.placement};say('Edited '+k.label+' · auto saved in timeline');}else{if(data.keys.length>=MAX_KEYS)return fail('Timeline full');let t=freeTime(time);if(t===null)return fail('No free key slot');const id='auto-'+Date.now().toString(36)+'-'+(++nseq);data.keys.push({id,kind:'pose',label:'Pose '+(data.keys.length+1),t,body:{...draft.body},placement:{...draft.placement}});data.duration=Math.max(data.duration,t);activeId=id;time=t;chosenKeys=new Set([id]);say('New authored pose at '+t.toFixed(3)+'s');}updateMeta();}
+function loadLibrary(id){const item=data.library.find(x=>x.id===id);if(!item)return;pause();saveUndo();draft={body:{...item.body},placement:{...item.placement}};activeId='';commitDraft();render();say('Loaded library pose at timeline head');}
+function toggleLibrary(){libraryOpen=!libraryOpen;render();}
+function drawLibrary(){for(const [panel,mobile] of [[$('libraryPanelD'),false],[$('libraryPanelM'),true]]){if(!panel)continue;panel.replaceChildren();const x=mobile?218:1031,y=mobile?97:56,w=mobile?182:229,h=mobile?421:570;gEl('rect',{x:libraryOpen?x:(x+w-33),y,width:libraryOpen?w:33,height:h,fill:'#0b2730',stroke:'#234750'},panel);const toggle=gEl('g',{'data-action':'library-toggle',style:'cursor:pointer'},panel);gEl('rect',{x:x+w-32,y:y+7,width:27,height:31,rx:5,fill:'#254a50'},toggle);const t=gEl('text',{x:x+w-19,y:y+28,'text-anchor':'middle',fill:'#d8f7eb','font-size':14},toggle);t.textContent=libraryOpen?'›':'‹';if(!libraryOpen)continue;const title=gEl('text',{x:x+12,y:y+28,fill:'#a1e9d0','font-size':mobile?11:13,'font-weight':700},panel);title.textContent='POSE LIBRARY';const hint=gEl('text',{x:x+12,y:y+50,fill:'#89afb1','font-size':10},panel);hint.textContent='SAVE adds · tap loads at head';let yy=y+79;const visible=data.library.slice(0,mobile?8:13);for(const item of visible){const row=gEl('g',{'data-lib':item.id,style:'cursor:pointer'},panel);gEl('rect',{x:x+4,y:yy-17,width:w-12,height:29,fill:'transparent'},row);gEl('line',{x1:x+12,y1:yy+14,x2:x+w-12,y2:yy+14,stroke:'#244850','pointer-events':'none'},row);const tt=gEl('text',{x:x+14,y:yy+1,fill:'#cbe4db','font-size':11},row);tt.textContent='◇ '+item.name;yy+=33;}}}
+function deletePose(){const ids=[...chosenKeys].filter(id=>!!key(id));if(!ids.length)return fail('Select keys to delete');if(sortedPoses().length-ids.filter(id=>canPose(key(id))).length<1)return fail('Keep at least one saved pose');saveUndo();data.keys=data.keys.filter(k=>!ids.includes(k.id));for(const id of ids)refs.delete(id);chosenKeys.clear();if(ids.includes(activeId)){activeId='';draft=evaluate(time,false);}updateMeta();render();say('Deleted '+ids.length+' key(s) · UNDO available');}
+function copyPose(){if(chosenKeys.size!==1)return fail('Select exactly one saved pose');const k=key([...chosenKeys][0]);if(!canPose(k))return fail('Ghost has no authored data to copy');clipboard={body:{...k.body},placement:{...k.placement},from:k.id,label:k.label};say('Copied saved pose '+k.label);}
+function pastePose(){if(!clipboard)return fail('COPY a saved pose first');const t=freeTime(time);if(t===null)return fail('No free time');saveUndo();const id='paste-'+Date.now().toString(36)+'-'+(++nseq);data.keys.push({id,kind:'pose',label:'Copy '+clipboard.label,t,body:{...clipboard.body},placement:{...clipboard.placement},from:clipboard.from});data.duration=Math.max(data.duration,t);updateMeta();chosenKeys=new Set([id]);render();say('Pasted NEW at '+t.toFixed(2)+'s · double-tap to edit');}
+function gEl(tag,attrs={},parent){const n=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,String(v));if(parent)parent.appendChild(n);return n;}
+function stageGroup(){return compact?$('stageM'):$('stageD');}
+function tlGroup(){return compact?$('timelineM'):$('timelineD');}
+function tlGeo(){return compact?{left:19,right:382,y:648,top:583,bottom:682}:{left:246,right:1005,y:719,top:676,bottom:758};}
+function mappingTime(t){const g=tlGeo();return g.left+(t-viewStart)/viewSpan*(g.right-g.left);}
+function timeFromX(x){const g=tlGeo();return Math.max(0,viewStart+(x-g.left)/(g.right-g.left)*viewSpan);}
+function eventXY(e){const p=$('lab-svg').createSVGPoint();p.x=e.clientX;p.y=e.clientY;const z=p.matrixTransform($('lab-svg').getScreenCTM().inverse());return {x:z.x,y:z.y};}
+const contourCache=new WeakMap();
+function groundMaxY(p){setPose(p);const cam=$('rigCamera'),inv=cam.getCTM()?.inverse();if(!inv)return -Infinity;let max=-Infinity;for(const el of $('rig-placement').querySelectorAll('path')){if(el.getAttribute('visibility')==='hidden'||el.id.startsWith('source-mark-'))continue;const ctm=el.getCTM();if(!ctm)continue;let samples=contourCache.get(el);if(!samples){const len=el.getTotalLength();samples=[];for(let i=0;i<=80;i++){const pt=el.getPointAtLength(len*i/80);samples.push([pt.x,pt.y]);}contourCache.set(el,samples);}const m=inv.multiply(ctm);for(const [x,y] of samples)max=Math.max(max,m.b*x+m.d*y+m.f);}return max+0.04;}
+function floorClamp(p){const bottom=groundMaxY(p);if(!Number.isFinite(bottom))return false;if(bottom>floorY+0.000001){p.placement.y=round(p.placement.y-(bottom-floorY),5);setPose(p);return true;}return false;}
+function floorLimitFrom(start,candidate){const before=clone(start),next=clone(candidate);const old=groundMaxY(before);if(old>floorY+.01)floorClamp(before);if(groundMaxY(next)<=floorY+1e-4)return next;let lo=0,hi=1;for(let i=0;i<19;i++){let m=(lo+hi)/2,trial=clone(before);for(const j of CHANNELS)trial.body[j]=before.body[j]+(next.body[j]-before.body[j])*m;for(const a of ['x','y','ori'])trial.placement[a]=before.placement[a]+(next.placement[a]-before.placement[a])*m;if(groundMaxY(trial)<=floorY+1e-4)lo=m;else hi=m;}const val=clone(before);for(const j of CHANNELS)val.body[j]=before.body[j]+(next.body[j]-before.body[j])*lo;for(const a of ['x','y','ori'])val.placement[a]=before.placement[a]+(next.placement[a]-before.placement[a])*lo;return val;}
+function setPose(p){const r=p.placement;$('rig-placement').setAttribute('transform',`translate(${r.x} ${r.y}) rotate(${r.ori} ${PIVOT.hip[0]} ${PIVOT.hip[1]})`);for(const k of CHANNELS){const part=$('part-'+PART[k]);if(part){const [x,y]=PIVOT[k];part.setAttribute('transform',`rotate(${(p.body[k]||0)*(SIGN[k]||1)} ${x} ${y})`);}}}
+function camera(){const base=compact?{x:130,y:130,s:1.15,bottom:518}:{x:497,y:145,s:1.50,bottom:625};const s=base.s*stageZoom,originalFloor=base.y+base.s*floorY;const minCameraY=originalFloor-base.y-s*floorY;stagePanY=Math.max(stagePanY,minCameraY);return `translate(${round(base.x+stagePanX,4)} ${round(base.y+stagePanY,4)}) scale(${round(s,5)})`;}
+function jointLocation(k){const n=$('locator-'+k),p=PIVOT[k],m=n?.getScreenCTM(),to=$('lab-svg').getScreenCTM()?.inverse();if(!m||!to)return null;const sx=m.a*p[0]+m.c*p[1]+m.e,sy=m.b*p[0]+m.d*p[1]+m.f;return {x:to.a*sx+to.c*sy+to.e,y:to.b*sx+to.d*sy+to.f};}
+function handlePlacement(){for(const k of CHANNELS){const n=$('handle-'+k),p=jointLocation(k);if(!p)continue;n.setAttribute('transform',`translate(${p.x} ${p.y})`);n.classList.toggle('sel',selection.has(k));}}
+function stage(){const host=stageGroup();if($('rigCamera').parentNode!==host){host.appendChild($('rigCamera'));host.appendChild($('jointHandles'));}
+ $('rigCamera').setAttribute('transform',camera());floorClamp(draft);
+ const floor=$('floorLine')||gEl('g',{id:'floorLine'},$('rigCamera'));floor.replaceChildren();gEl('line',{x1:-1250,x2:1250,y1:floorY,y2:floorY,class:'floor'},floor);
+ gEl('text',{x:4,y:floorY-4,fill:'#a4cabb','font-size':6},floor).textContent='FLOOR · DESIGN CONTACT';
+ setPose(draft);handlePlacement();drawGuides();const s=[...selection];$('jointStatusD').textContent=s.length?s.join(', ').slice(0,26):'None';$('jointStatusM').textContent=s.length?'JOINTS: '+s.join(', ').slice(0,28):'Tap a joint to select';$('zoomD').textContent=Math.round(stageZoom*100)+'%';$('zoomM').textContent=Math.round(stageZoom*100)+'%';}
+function drawGuides(){const layer=$('guideLayer');layer.replaceChildren();if(!refsOn)return;const rr=[...refs.values()];rr.sort((a,b)=>Math.abs(b.sourceT-time)-Math.abs(a.sourceT-time));for(const ref of rr){const pose=ref.kind==='ghost'?ghostPose(key(ref.id)||{t:ref.sourceT}):ref.snapshot;if(!pose)continue;const cloneRig=$('rig-placement').cloneNode(true);const dist=Math.abs(ref.sourceT-time);const alpha=.17+.38*(1-Math.min(1,dist/Math.max(.5,data.duration)));cloneRig.setAttribute('class','frozen-reference'+(ref.kind==='ghost'?' ghost-reference':''));cloneRig.setAttribute('opacity',round(alpha,3));cloneRig.removeAttribute('id');const pl=pose.placement;cloneRig.setAttribute('transform',`translate(${pl.x} ${pl.y}) rotate(${pl.ori} ${PIVOT.hip[0]} ${PIVOT.hip[1]})`);
+ for(const j of CHANNELS){const n=cloneRig.querySelector(`[data-placeholder="${j}"]`)||cloneRig.querySelector(`[id="part-${PART[j]}"]`);if(n){const [x,y]=PIVOT[j];n.setAttribute('transform',`rotate(${(pose.body[j]||0)*(SIGN[j]||1)} ${x} ${y})`);}}
+ for(const el of cloneRig.querySelectorAll('[id],[data-part]')){el.removeAttribute('id');el.removeAttribute('data-part');el.removeAttribute('style');}
+ layer.appendChild(cloneRig);}}
+function timeline(){const host=tlGroup();host.replaceChildren();const geom=tlGeo(),len=geom.right-geom.left;gEl('rect',{x:geom.left,y:geom.top,width:len,height:geom.bottom-geom.top,rx:5,fill:'#112f38','data-tlblank':'1'},host);
+for(let n=0;n<=8;n++){const t=viewStart+viewSpan*n/8,x=geom.left+len*n/8;gEl('line',{x1:x,y1:geom.top+6,x2:x,y2:geom.bottom-5,stroke:'#375660','stroke-width':n%2===0?.8:.35,'pointer-events':'none'},host);const tick=gEl('text',{x,y:geom.top+16,fill:'#84b4b5','font-size':9,'text-anchor':'middle'},host);tick.textContent=t.toFixed(2);}
+gEl('line',{x1:geom.left,y1:geom.y,x2:geom.right,y2:geom.y,stroke:'#688e92','pointer-events':'none'},host);
+for(const k of keys()){const xx=mappingTime(k.t);if(xx<geom.left-10||xx>geom.right+10)continue;const diamond=gEl('path',{d:`M${xx} ${geom.y-9} l8 9 -8 9 -8 -9 Z`,class:'key'+(chosenKeys.has(k.id)?' sel':'')+(k.kind==='ghost'?' ghost':'')+(activeId===k.id?' edit':''), 'pointer-events':'none'},host);gEl('rect',{x:xx-15,y:geom.y-18,width:30,height:36,class:'key-hit','data-key':k.id},host);}
+const px=mappingTime(time);if(px>=geom.left-10&&px<=geom.right+10){gEl('line',{x1:px,y1:geom.top+3,x2:px,y2:geom.bottom-4,stroke:'#9effd9','stroke-width':2,'pointer-events':'none'},host);gEl('rect',{x:px-12,y:geom.top,width:24,height:20,fill:'transparent','data-playhead':'1'},host);}
+}
+function render(){const next=innerWidth<640||innerWidth/Math.max(1,innerHeight)<.7;if(next!==compact){compact=next;$('lab-svg').setAttribute('viewBox',compact?'0 0 400 800':'0 0 1260 790');$('desktopLayout').setAttribute('style',compact?'display:none':'display:inline');$('mobileLayout').setAttribute('style',compact?'display:inline':'display:none');}
+$('[data-action="mode"]').forEach(n=>n.classList.toggle('active',n.getAttribute('data-value')===mode));$('[data-action="axis-cycle"]').forEach(n=>{n.classList.toggle('active',axis!=='OFF');n.querySelector('text').textContent=axis==='OFF'?'XY':axis==='X'?'X':'Y';n.setAttribute('aria-label',axis==='OFF'?'Free XY':axis==='X'?'Lock X':'Lock Y');});$('[data-action="play"]').forEach(n=>n.querySelector('text').textContent=playing?'Ⅱ':'▶');$('[data-action="ref"]').forEach(n=>{n.classList.toggle('active',refsOn);n.querySelector('text').textContent=refsOn?'REF ON':'REF OFF';});$('modeDescription').textContent='Selection only at joints · drag never selects';$('timeD').textContent=time.toFixed(2)+' s';$('timeM').textContent=time.toFixed(2)+' s';stage();timeline();drawPoseList();drawLibrary();}
+function drawPoseList(){const g=$('poseListD');g.replaceChildren();let row=0;for(const k of keys()){if(row>8)break;const y=207+row*32;const group=gEl('g',{'data-listkey':k.id,style:'cursor:pointer'},g);gEl('rect',{x:11,y,width:196,height:28,rx:4,fill:chosenKeys.has(k.id)?'#205f55':'#183942',stroke:activeId===k.id?'#e6ac80':'#396069'},group);const t=gEl('text',{x:19,y:y+18,'font-size':10.5,fill:'#ddede6','pointer-events':'none'},group);t.textContent=(k.kind==='ghost'?'◇ ':'◆ ')+k.label.slice(0,17);const tt=gEl('text',{x:198,y:y+18,'font-size':10,fill:'#99dcbf','text-anchor':'end','pointer-events':'none'},group);tt.textContent=k.t.toFixed(2);row++;}}
+function hasDescendant(root,target){if(root===target)return true;let n=target;while(PARENT[n]){if(PARENT[n]===root)return true;n=PARENT[n];}return false;}
+function selectedPivot(point){let best=null,d=Infinity;for(const j of selection){const p=jointLocation(j);if(!p)continue;const r=Math.hypot(p.x-point.x,p.y-point.y);if(r<d){d=r;best=j;}}return best;}
+function chooseBranch(part,pivot){if(!part)return 'distal';const joint=ID[part];if(!joint)return 'invalid';if(hasDescendant(pivot,joint)){for(const s of selection)if(s!==pivot&&hasDescendant(pivot,s))return 'invalid';return 'distal';}if(selection.size!==1)return 'invalid';return 'proximal';}
+function guideSelectedRefresh(id){if(refsOn&&chosenKeys.has(id)&&key(id))pin(key(id));}
+function nearestJoint(p){let best=null,d=Infinity;for(const k of CHANNELS){const q=jointLocation(k);if(!q)continue;const v=Math.hypot(p.x-q.x,p.y-q.y);if(v<d){d=v;best=k;}}return best;}
+function stageDown(e,target,p){if(e.button!==0)return;const handle=target.closest?.('[data-joint]'),part=target.closest?.('[data-part]'),clicked=handle?nearestJoint(p):null;
+const base={pointer:e.pointerId,origin:p,startScreen:{x:e.clientX,y:e.clientY},original:snapshot(),pose0:clone(draft),started:false,long:false};
+if(clicked){gesture={...base,kind:'JOINT',joint:clicked};armLong('JOINT',clicked);return;}
+if(part){const id=selection.size?selectedPivot(p):null;const partName=part.getAttribute('data-part');const branch=id?chooseBranch(partName,id):'whole';gesture={...base,kind:'STAGE',joint:id,part:partName,branch,pivot:id?jointLocation(id):null};return;}
+gesture={...base,kind:'EMPTY_STAGE'};}
+function armLong(which,id){clearTimeout(pressTimer);pressTimer=setTimeout(()=>{if(!gesture||gesture.kind!==which||gesture.started)return;pressOwned=true;if(which==='JOINT'){multi=true;selection.add(id);}else{keyMulti=true;chosenKeys.add(id);if(refsOn)pin(key(id));}gesture.long=true;render();say('MULTISELECT active · tap additional '+(which==='JOINT'?'joints':'keys'));},460);}
+function leverFor(j,p){const next=Object.keys(PARENT).find(k=>PARENT[k]===j)||PARENT[j];const c=next?jointLocation(next):null;return c?{x:c.x-p.x,y:c.y-p.y}:{x:0,y:-45};}
+function gestureStartStage(d,p,e){d.started=true;clearTimeout(pressTimer);if(d.kind==='JOINT'){const canRotate=selection.has(d.joint)&&selection.size>0;d.kind='STAGE';d.branch=canRotate?chooseBranch(PART[d.joint],d.joint):'whole';d.fromJoint=true;d.pivot=canRotate?jointLocation(d.joint):null;}
+if(d.kind==='STAGE'&&d.branch!=='whole'){if(mode==='ROTATE'){const pv=d.pivot||jointLocation(d.joint);d.angle0=Math.atan2(d.origin.y-pv.y,d.origin.x-pv.x);if(d.fromJoint||Math.hypot(d.origin.y-pv.y,d.origin.x-pv.x)<10){d.virtual=true;d.lever=leverFor(d.joint,pv);d.angle0=0;}}
+else if(mode==='FLIP'){const a=[...selection].map(jointLocation).filter(Boolean);d.pivot={x:a.reduce((s,v)=>s+v.x,0)/a.length,y:a.reduce((s,v)=>s+v.y,0)/a.length};d.angle0=Math.atan2(d.origin.y-d.pivot.y,d.origin.x-d.pivot.x);if(d.fromJoint||Math.hypot(d.origin.y-d.pivot.y,d.origin.x-d.pivot.x)<10){d.virtual=true;d.angle0=0;}}}
+say('Gesture '+(d.branch==='whole'?'TRANSLATE':mode));}
+function transformPoseAtWorldAnchor(candidate,anchors,goal){setPose(candidate);const selected=(Array.isArray(anchors)?anchors:[anchors]);const points=selected.map(jointLocation).filter(Boolean);if(!points.length)return;const p={x:points.reduce((sum,q)=>sum+q.x,0)/points.length,y:points.reduce((sum,q)=>sum+q.y,0)/points.length};const cameraScale=(compact?1.15:1.5)*stageZoom;candidate.placement.x+=(goal.x-p.x)/cameraScale;candidate.placement.y+=(goal.y-p.y)/cameraScale;}
+
+function stageMove(e,p){const d=gesture;if(!d)return;const diff=Math.hypot(e.clientX-d.startScreen.x,e.clientY-d.startScreen.y);
+if(d.kind==='EMPTY_STAGE'){if(diff<7)return;d.started=true;clearTimeout(pressTimer);d.kind='CAMERA_PAN';d.panX=stagePanX;d.panY=stagePanY;}
+if(d.kind==='CAMERA_PAN'){stagePanX=d.panX+p.x-d.origin.x;stagePanY=d.panY+p.y-d.origin.y;stage();e.preventDefault();return;}
+if(!['JOINT','STAGE'].includes(d.kind))return;
+if(!d.started){if(diff<8)return;gestureStartStage(d,p,e);}if(d.long)return;if(d.branch==='invalid'){say('Only free limb extremities may pivot');return;}
+const orig=d.pose0,now=clone(orig),scale=(compact?1.15:1.5)*stageZoom;
+if(d.branch==='whole'){let x=(p.x-d.origin.x)/scale,y=(p.y-d.origin.y)/scale;if(axis==='X')x=0;if(axis==='Y')y=0;now.placement.x+=x;now.placement.y+=y;}
+else {const pv=d.pivot,cur=Math.atan2(p.y-pv.y,p.x-pv.x),lever=d.lever||{x:0,y:-40},shift={x:p.x-d.origin.x,y:p.y-d.origin.y};let delta=d.virtual?Math.atan2(lever.x*shift.y-lever.y*shift.x,lever.x*lever.x+lever.y*lever.y+lever.x*shift.x+lever.y*shift.y)*180/Math.PI:(cur-d.angle0)*180/Math.PI;while(delta>180)delta-=360;while(delta< -180)delta+=360;
+if(mode==='FLIP'){if(d.prevAngle===undefined){d.prevAngle=cur;d.accum=delta;}else{let change=(cur-d.prevAngle)*180/Math.PI;while(change>180)change-=360;while(change< -180)change+=360;d.accum+=change;d.prevAngle=cur;delta=d.accum;}now.placement.ori=orig.placement.ori+delta;transformPoseAtWorldAnchor(now,[...selection],pv);}
+else if(d.branch==='distal'){const v=orig.body[d.joint]+delta/(SIGN[d.joint]||1);now.body[d.joint]=Math.max(LIMITS[d.joint][0],Math.min(LIMITS[d.joint][1],v));}
+else if(d.branch==='proximal'){const val=orig.body[d.joint]-delta/(SIGN[d.joint]||1),cl=Math.max(LIMITS[d.joint][0],Math.min(LIMITS[d.joint][1],val));now.body[d.joint]=cl;now.placement.ori=orig.placement.ori+(orig.body[d.joint]-cl)*(SIGN[d.joint]||1);transformPoseAtWorldAnchor(now,d.joint,pv);}}
+draft=now;const groundHit=floorClamp(draft);stage();if(groundHit)say('FLOOR · upward geometric correction, no penetration');e.preventDefault();}
+function stageEnd(cancel=false){const d=gesture;if(!d||!['JOINT','STAGE','EMPTY_STAGE','CAMERA_PAN'].includes(d.kind))return;clearTimeout(pressTimer);if(cancel){if(d.pose0)draft=clone(d.pose0);gesture=null;render();return;}if(d.long){gesture=null;render();return;}
+if(d.kind==='JOINT'&&!d.started){selectJoint(d.joint,multi);gesture=null;return;}
+if(d.kind==='EMPTY_STAGE'&&!d.started){selection.clear();multi=false;gesture=null;render();return;}
+if(d.started&&['STAGE'].includes(d.kind)&&JSON.stringify(d.pose0)!==JSON.stringify(draft)){saveUndo(d.original);commitDraft();}gesture=null;render();}
+function timelineDown(e,target,p){const kEl=target.closest?.('[data-key]'),play=target.closest?.('[data-playhead]'),geom=tlGeo();if(kEl){const id=kEl.dataset.key;gesture={kind:'KEY',pointer:e.pointerId,id,origin:p,x:e.clientX,started:false,long:false,base:snapshot(),times:Object.fromEntries(data.keys.map(k=>[k.id,k.t]))};armLong('KEY',id);return;}
+if(play||p.y<geom.top+25){gesture={kind:'HEAD',pointer:e.pointerId,origin:p};return;}gesture={kind:'PAN',pointer:e.pointerId,x:e.clientX,origin:p,start:viewStart,moved:false};}
+function timeMove(e,p){const d=gesture;if(!d)return;const geom=tlGeo(),scale=(geom.right-geom.left)/viewSpan;if(d.kind==='HEAD'){chooseTime(timeFromX(p.x));return;}if(d.kind==='PAN'){const dx=p.x-d.origin.x;if(Math.abs(dx)>5){d.moved=true;viewStart=Math.max(0,d.start-dx/scale);timeline();}return;}if(d.kind!=='KEY')return;const diff=Math.abs(e.clientX-d.x);if(d.long)return;if(diff<9&&!d.started)return;clearTimeout(pressTimer);d.started=true;
+const targets=chosenKeys.has(d.id)?[...chosenKeys]:[];if(!targets.length){d.kind='PAN';d.start=viewStart;d.moved=true;return;}const delta=round((p.x-d.origin.x)/scale,3);const old=new Set(data.keys.filter(k=>!targets.includes(k.id)).map(k=>k.t.toFixed(3)));const times=targets.map(id=>round(d.times[id]+delta,3));if(times.some(t=>t<0||t>data.duration+90)||new Set(times.map(t=>t.toFixed(3))).size!==times.length||times.some(t=>old.has(t.toFixed(3)))){say('Retime rejected: overlap or negative time');return;}
+for(let i=0;i<targets.length;i++)key(targets[i]).t=times[i];data.duration=Math.max(data.duration,...times);timeline();e.preventDefault();}
+function timelineEnd(e,p,cancel=false){const d=gesture;if(!d||!['HEAD','PAN','KEY'].includes(d.kind))return;clearTimeout(pressTimer);if(d.kind==='PAN'){if(!d.moved&&!cancel){chosenKeys.clear();keyMulti=false;render();}gesture=null;return;}
+if(d.kind==='HEAD'){if(!cancel)chooseTime(timeFromX(p.x));gesture=null;return;}
+if(cancel){for(const [id,t]of Object.entries(d.times))key(id).t=t;gesture=null;render();return;}if(d.long){gesture=null;render();return;}
+if(d.started){if(Object.entries(d.times).some(([id,t])=>key(id)?.t!==t)){saveUndo(d.base);updateMeta();say('Retimed selected keys');}gesture=null;render();return;}
+const now=performance.now(),dbl=lastTap.id===d.id&&now-lastTap.at<360;lastTap={id:d.id,at:now};if(dbl)editAt(d.id);else selectKey(d.id,keyMulti);gesture=null;}
+function pinchBegin(){if(pointerTouches.size!==2)return;const [a,b]=[...pointerTouches.values()],dist=Math.max(1,Math.hypot(a.x-b.x,a.y-b.y)),mid={x:(a.x+b.x)/2,y:(a.y+b.y)/2};if(gesture){if(['STAGE','JOINT'].includes(gesture.kind)&&gesture.pose0)draft=clone(gesture.pose0);if(gesture.kind==='KEY')for(const [id,t]of Object.entries(gesture.times))key(id).t=t;gesture=null;clearTimeout(pressTimer);}pinch={kind:a.area===b.area?a.area:'none',dist,mid,startZoom:stageZoom,startSpan:viewSpan,startView:viewStart,startPanX:stagePanX,startPanY:stagePanY};}
+function handlePinch(){if(!pinch||pointerTouches.size!==2)return;const [a,b]=[...pointerTouches.values()],dd=Math.max(1,Math.hypot(a.x-b.x,a.y-b.y)),center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};if(pinch.kind==='stage'){const old=(compact?1.15:1.50)*pinch.startZoom;stageZoom=Math.max(.35,Math.min(4,pinch.startZoom*dd/pinch.dist));const scale=stageZoom/pinch.startZoom;const initial=eventXY({clientX:pinch.mid.x,clientY:pinch.mid.y}),current=eventXY({clientX:center.x,clientY:center.y});const base=compact?{x:130,y:130}:{x:497,y:145};stagePanX=pinch.startPanX+current.x-initial.x-(scale-1)*(initial.x-base.x-pinch.startPanX);stagePanY=pinch.startPanY+current.y-initial.y-(scale-1)*(initial.y-base.y-pinch.startPanY);stage();}
+else if(pinch.kind==='timeline'){const gg=tlGeo(),original=eventXY({clientX:pinch.mid.x,clientY:pinch.mid.y}).x,cur=eventXY({clientX:center.x,clientY:center.y}).x;const ratio=Math.max(0,Math.min(1,(original-gg.left)/(gg.right-gg.left))),anchor=pinch.startView+pinch.startSpan*ratio;viewSpan=Math.max(.18,Math.min(120,pinch.startSpan*pinch.dist/dd));viewStart=Math.max(0,anchor-(cur-gg.left)/(gg.right-gg.left)*viewSpan);timeline();}}
+function action(a,v=''){if(a==='mode'){mode=v;render();}else if(a==='axis-cycle'){axis=axis==='OFF'?'X':axis==='X'?'Y':'OFF';render();say('Translation '+(axis==='OFF'?'free XY':axis==='X'?'X locked':'Y locked'));}else if(a==='library-toggle')toggleLibrary();else if(a==='add')addPose();else if(a==='ghost')addPose('ghost');else if(a==='save')savePose();else if(a==='delete')deletePose();else if(a==='copy')copyPose();else if(a==='paste')pastePose();else if(a==='undo')undo();else if(a==='redo')redo();else if(a==='ref')toggleRefs();else if(a==='play'){playing?pause():play();render();}else if(a==='stop'){pause();chooseTime(0);}else if(a==='zoom-in'){stageZoom=Math.min(4,stageZoom*1.2);render();}else if(a==='zoom-out'){stageZoom=Math.max(.35,stageZoom/1.2);render();}else if(a==='export-svg')exportSVG();else if(a==='export-json')exportJSON();}
+function toggleAxisMenu(){const n=$('axisMenu'),display=n.getAttribute('style')==='display:none';if(display){const parent=compact?$('mobileLayout'):$('desktopLayout');parent.appendChild(n);n.setAttribute('transform',compact?'translate(265 581)':'translate(1045 237)');}n.setAttribute('style',display?'display:inline':'display:none');}
+function updateMeta(){$('acro-pose-data').textContent=JSON.stringify(data,null,2);persist();}
+function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElementNS('http://www.w3.org/1999/xhtml','a');a.href=u;a.download=name;const holder=document.body||document.documentElement;holder.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);}
+function exportJSON(){updateMeta();download(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),'AcroLab-SVG-MotionLab-v0.5-poses.json');}
+function exportSVG(){updateMeta();const root=$('lab-svg').cloneNode(true);for(const q of ['guideLayer','jointHandles','timelineD','timelineM','poseListD'])root.querySelector('#'+q)?.replaceChildren();root.setAttribute('viewBox','0 0 1260 790');root.querySelector('#mobileLayout')?.setAttribute('style','display:none');const d=root.querySelector('#desktopLayout');if(d){const scene=d.querySelector('#stageD');if(scene){const camera=root.querySelector('#rigCamera');if(camera)scene.appendChild(camera);const handles=root.querySelector('#jointHandles');if(handles)scene.appendChild(handles);}}
+const raw='<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(root);download(new Blob([raw],{type:'image/svg+xml'}),'AcroLab-SVG-MotionLab-v0.5-edited.svg');say('SVG exported · full pose metadata');}
+function play(){if(playing)return;if(time>=data.duration){time=0;}playing=true;let prev=performance.now();function frame(now){if(!playing)return;time=Math.min(data.duration,time+(now-prev)/1000);prev=now;activeId='';draft=evaluate(time,false);render();if(time>=data.duration){playing=false;render();return;}raf=requestAnimationFrame(frame);}raf=requestAnimationFrame(frame);render();}
+function pause(){playing=false;cancelAnimationFrame(raf);render();}
+function cancelGesture(reset=true){clearTimeout(pressTimer);if(reset&&gesture){if(['STAGE','JOINT'].includes(gesture.kind)&&gesture.pose0)draft=clone(gesture.pose0);if(gesture.kind==='KEY')for(const [id,t]of Object.entries(gesture.times))key(id).t=t;}gesture=null;pointerTouches.clear();pinch=null;}
+function area(target){if(target.closest?.('[data-key], [data-playhead], #timelineD, #timelineM'))return'timeline';if(target.closest?.('#stageD,#stageM,#stageBgD,#stageBgM'))return'stage';return'ui';}
+function install(){const root=$('lab-svg');root.addEventListener('pointerdown',e=>{const p=eventXY(e),region=area(e.target);if(e.pointerType==='touch'){pointerTouches.set(e.pointerId,{x:e.clientX,y:e.clientY,area:region});if(pointerTouches.size===2){pinchBegin();e.preventDefault();return;}if(pointerTouches.size>2)return;}
+if(pinch||gesture)return;const a=e.target.closest?.('[data-action]');if(a)return;
+const lib=e.target.closest?.('[data-lib]');if(lib){gesture={kind:'LIB',pointer:e.pointerId,id:lib.getAttribute('data-lib'),origin:p,startScreen:{x:e.clientX,y:e.clientY}};root.setPointerCapture?.(e.pointerId);return;}
+if(region==='stage'){stageDown(e,e.target,p);root.setPointerCapture?.(e.pointerId);return;}if(region==='timeline'){timelineDown(e,e.target,p);root.setPointerCapture?.(e.pointerId);return;}
+const list=e.target.closest?.('[data-listkey]');if(list){timelineDown(e,{closest:()=>({dataset:{key:list.dataset.listkey}})},p);root.setPointerCapture?.(e.pointerId);}});
+root.addEventListener('pointermove',e=>{if(e.pointerType==='touch'&&pointerTouches.has(e.pointerId)){const a=pointerTouches.get(e.pointerId);a.x=e.clientX;a.y=e.clientY;if(pinch){handlePinch();e.preventDefault();return;}}if(!gesture||gesture.pointer!==e.pointerId)return;const p=eventXY(e);if(gesture.kind==='LIB')return;if(['STAGE','JOINT','EMPTY_STAGE','CAMERA_PAN'].includes(gesture.kind))stageMove(e,p);else timeMove(e,p);});
+root.addEventListener('pointerup',e=>finish(e,false));root.addEventListener('pointercancel',e=>finish(e,true));
+function finish(e,cancel){if(e.pointerType==='touch'){pointerTouches.delete(e.pointerId);if(pinch){if(pointerTouches.size<2)pinch=null;return;}}if(!gesture||gesture.pointer!==e.pointerId)return;const d=gesture,p=eventXY(e);if(d.kind==='LIB'){gesture=null;if(!cancel&&Math.hypot(e.clientX-d.startScreen.x,e.clientY-d.startScreen.y)<10)loadLibrary(d.id);return;}if(['STAGE','JOINT','EMPTY_STAGE','CAMERA_PAN'].includes(d.kind))stageEnd(cancel);else timelineEnd(e,p,cancel);}
+root.addEventListener('click',e=>{const b=e.target.closest?.('[data-action]');if(!b)return;action(b.dataset.action,b.dataset.value);e.preventDefault();});
+root.addEventListener('keydown',e=>{const b=e.target.closest?.('[data-action]');if(b&&(e.key==='Enter'||e.key===' ')){e.preventDefault();action(b.dataset.action,b.dataset.value);return;}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo();}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='c'){e.preventDefault();copyPose();}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='v'){e.preventDefault();pastePose();}if(e.key===' '){e.preventDefault();playing?pause():play();}});
+root.addEventListener('wheel',e=>{const xy=eventXY(e);if(area(e.target)==='timeline'){const g=tlGeo(),ratio=Math.max(0,Math.min(1,(xy.x-g.left)/(g.right-g.left))),anchor=viewStart+ratio*viewSpan;viewSpan=Math.max(.18,Math.min(120,viewSpan*(e.deltaY>0?1.16:.86)));viewStart=Math.max(0,anchor-ratio*viewSpan);timeline();}else if(area(e.target)==='stage'){const before=stageZoom;stageZoom=Math.max(.35,Math.min(4,stageZoom*(e.deltaY>0?.9:1.1)));stagePanX+=(1-stageZoom/before)*(xy.x-(compact?130:497)-stagePanX);stagePanY+=(1-stageZoom/before)*(xy.y-(compact?130:145)-stagePanY);stage();}e.preventDefault();},{passive:false});
+root.addEventListener('dragover',e=>e.preventDefault());root.addEventListener('drop',async e=>{e.preventDefault();const f=e.dataTransfer?.files?.[0];if(!f?.name.endsWith('.json'))return;try{const d=JSON.parse(await f.text());validate(d);saveUndo();data=d;if(!Array.isArray(data.library))data.library=[];updateMeta();chosenKeys.clear();refs.clear();refsOn=false;initialDraft();render();say('Imported matching v0.5 authored data');}catch(ex){say('Import rejected: '+ex.message);}});
+window.addEventListener('resize',()=>render());window.addEventListener('blur',()=>{cancelGesture();render();});render();say('v0.5 · new source · tap ≠ swipe · library saves');
+window.AcroSVGLab={getState:()=>({data:structuredClone(data),mode,axis,selection:[...selection],chosenKeys:[...chosenKeys],activeId,time,draft:clone(draft),refsOn,refs:structuredClone([...refs]),viewStart,viewSpan,stageZoom,stagePanX,stagePanY,libraryOpen,multi,keyMulti,playing}),action,chooseTime,editAt,selectJoint,selectKey,addPose,savePose,deletePose,copyPose,pastePose,evaluate,validate,undo,redo,render,floorClamp,groundMaxY,floorLimitFrom,limits:LIMITS};}
+try{install();}catch(e){console.error(e);say('INIT ERROR: '+e.message);}
+})();
+]]></script>
+</svg>
+
+</main>
+<script type="module" src="./controller.js"></script>
+</body>
+</html>
