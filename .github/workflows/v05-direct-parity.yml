@@ -1,0 +1,30 @@
+name: v0.5 direct-translation parity
+on:
+  push:
+    branches: [feat/v05-direct-translation-20261013]
+  workflow_dispatch:
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Dependencies
+        run: npm install --no-audit --no-fund
+      - name: Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exact source and extracted code
+        run: npm run test:v05:structure
+      - name: Browser equivalent state and screenshot
+        run: npm run test:v05:browser
+      - name: Evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v05-direct-parity-screenshots
+          path: evidence/v05-direct/
