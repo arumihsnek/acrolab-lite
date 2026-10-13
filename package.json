@@ -1,0 +1,15 @@
+{
+  "name": "acrolab-lite-v05-direct-port",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:v05:structure": "node --test tests/v05-direct-structure.test.mjs",
+    "test:v05:browser": "node tests/v05-direct-browser.mjs",
+    "test:v05": "npm run test:v05:structure && npm run test:v05:browser"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0",
+    "pngjs": "^7.0.0",
+    "pixelmatch": "^6.0.0"
+  }
+}
