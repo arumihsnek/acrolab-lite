@@ -7,21 +7,21 @@ const html=readFileSync('public/v05-direct/index.html','utf8');
 const ctrl=readFileSync('public/v05-direct/controller.js','utf8');
 const css=readFileSync('public/v05-direct/host.css','utf8');
 const sha=s=>createHash('sha256').update(s).digest('hex');
-const sourceScript=src.match(/<script\\b[^>]*\\bid="motionLabScript"[^>]*>([\\s\\S]*?)<\\/script>/i);
+const sourceScript=src.match(/<script\b[^>]*\bid="motionLabScript"[^>]*>([\s\S]*?)<\/script>/i);
 test('frozen v0.5 SHA never changes',()=>assert.equal(sha(src),'93246123d6e307e51562d187ddc0ed33639953f83ac9fee9f297cbed1f07555b'));
 test('exact 13 joint handles, source paths and metadata carried into HTML',()=>{
   for(const id of ['lab-svg','acro-pose-data','desktopLayout','mobileLayout','rigCamera','jointHandles','timelineD','timelineM','poseListD','stageD','stageM']){
     assert(src.includes('id="'+id+'"'),'src id '+id);
     assert(html.includes('id="'+id+'"'),'HTML id '+id);
   }
-  const pathDs=(s)=>[...s.matchAll(/<path\\b[^>]*\\bd="([^"]+)"/g)].map(m=>m[1]);
+  const pathDs=(s)=>[...s.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map(m=>m[1]);
   assert.deepEqual(pathDs(html),pathDs(src));
   for(const name of ['hip','knee','ankle','midtarsal','mtp','lower_trunk','upper_trunk','neck_base','head_neck','shoulder','elbow','wrist','collective_finger'])
     assert(html.includes('data-joint="'+name+'"'),'missing joint '+name);
 });
 test('original behavior/controller byte-equivalent modulo one export-compatibility line',()=>{
   assert(sourceScript,'source inline controller not found');
-  const source=sourceScript[1].replace(/^<!\\[CDATA\\[/,'').replace(/\\]\\]>$/,'');
+  const source=sourceScript[1].replace(/^<!\[CDATA\[/,'').replace(/\]\]>$/,'');
   const external=ctrl.slice(ctrl.indexOf("(()=>{'use strict';"));
   const repaired=external.replace("root.querySelector('#motionLabScript')?.setAttribute('type','application/ecmascript');",'');
   assert.equal(repaired,source,'Unexpected behavioral rewrite in translation');
