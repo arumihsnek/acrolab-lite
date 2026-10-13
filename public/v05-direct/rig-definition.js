@@ -10,3 +10,4 @@ const SOURCE_SHA='7069ad3dfd8170e862f24e1a408848040807ccb1d569c340143ad75e348128
 const initBody=Object.fromEntries(CHANNELS.map(k=>[k,0]));
 
 export { CHANNELS, LIMITS, SIGN, PIVOT, PART, ID, PARENT, SOURCE_SHA, initBody };
+export const MAX_KEYS=100; // original authoring bound shared with validator
