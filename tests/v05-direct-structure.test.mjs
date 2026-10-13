@@ -71,6 +71,7 @@ test('source SVG script preserved inert in HTML, restored only on SVG export',()
 test('host CSS only resets page geometry, not authored source paths/UI',()=>{
   assert(css.includes('100dvh'));
   assert(!css.includes('transform:'));
-  assert(!css.includes('display:none'));
+  assert(css.includes('.v05-semantic-action[hidden]{display:none;}'));
+  assert(!css.includes('#lab-svg{display:none'));
   assert(!html.includes('C3 private'));
 });
