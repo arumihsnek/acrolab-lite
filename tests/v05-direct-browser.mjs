@@ -43,9 +43,16 @@ try{
    assert.equal(errors.length,0,kind+' '+label+' init '+JSON.stringify(errors));
    await page.screenshot({path:'evidence/v05-direct/'+label+'-'+kind+'.png'});
    shots.push(PNG.sync.read(await page.screenshot()));
+   // REAL UI route: click v0.5's authored SVG control and joint handle.
+   await page.locator('[data-action="axis-cycle"]:visible').first().click({force:true});
+   assert.equal((await page.evaluate(()=>window.AcroSVGLab.getState())).axis,'X','native axis-cycle click');
+   await page.locator('[data-joint="shoulder"]:visible').first().click({force:true});
+   const tap=await page.evaluate(()=>window.AcroSVGLab.getState());
+   assert(tap.selection.includes('shoulder'),'native shoulder tap select');
+   // API route checks exactly the same original exported action dispatch.
    await page.evaluate(()=>{const a=window.AcroSVGLab;a.action('mode','FLIP');a.action('axis-cycle');a.action('zoom-in');});
    const after=projections(await page.evaluate(()=>window.AcroSVGLab.getState()));
-   assert.equal(after.mode,'FLIP');assert.equal(after.axis,'X');assert(after.stageZoom>1);
+   assert.equal(after.mode,'FLIP');assert.equal(after.axis,'Y');assert(after.stageZoom>1);
    const dl=page.waitForEvent('download');
    await page.evaluate(()=>window.AcroSVGLab.action('export-svg'));
    const download=await dl;const stream=await download.createReadStream(),chunks=[];
