@@ -2,6 +2,8 @@ name: v0.5 direct-translation parity
 on:
   push:
     branches: [feat/v05-direct-translation-20261013]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 jobs:
   parity:
