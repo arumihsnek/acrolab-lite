@@ -1,0 +1,8 @@
+/* Host CSS only. ALL artwork, SVG-authored UI dimensions and colors come
+   from the frozen v0.5 source, not from a new UI. Overrides: UA body margin only. */
+:root { color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #v05-direct-root { width: 100%; height: 100%; margin: 0; padding: 0; }
+html, body { background: #071c24; overflow: hidden; }
+#v05-direct-root { display: block; width: 100vw; height: 100dvh; }
+#lab-svg { width: 100%; height: 100%; display: block; }
