@@ -15,8 +15,8 @@ const entries=nodes.map((source,index)=>{
   button.type='button';
   button.className='v05-semantic-action';
   button.setAttribute('aria-label',source.getAttribute('aria-label')||source.dataset.action);
-  button.dataset.action=source.dataset.action;
-  button.dataset.value=source.dataset.value||'';
+  button.dataset.v05Action=source.dataset.action;
+  button.dataset.v05Value=source.dataset.value||'';
   button.dataset.sourceIndex=String(index);
   button.addEventListener('click',e=>{
     const clicked=new MouseEvent('click',{bubbles:true,cancelable:true,
