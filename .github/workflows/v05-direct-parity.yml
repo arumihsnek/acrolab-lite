@@ -1,0 +1,54 @@
+name: v0.5 direct-translation parity
+on:
+  push:
+    branches: [feat/v05-direct-translation-20261013]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Dependencies
+        run: npm install --no-audit --no-fund
+      - name: Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exact source and extracted code
+        run: npm run test:v05:structure
+      - name: Browser equivalent state and screenshot
+        run: npm run test:v05:browser
+      - name: Evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v05-direct-parity-screenshots
+          path: evidence/v05-direct/
+
+      - name: Package exact source and migrated modules for offline ChatGPT work
+        if: always()
+        run: |
+          tar czf v05-direct-source.tgz \
+            assets/reference/svg-motion-lab-v0.5.svg \
+            assets/source/manekin2D-vertical2.svg \
+            public/v05-direct/ \
+            tests/v05-direct-browser.mjs \
+            tests/v05-direct-structure.test.mjs \
+            package.json \
+            docs/UX-BASELINE-v0.5.md \
+            docs/V05-REALITY-AUDIT.md \
+            docs/PRODUCT-CONTRACT.md \
+            docs/GESTURE-CONTRACT.md \
+            docs/EDITOR-STATE-AND-STORAGE.md
+      - name: Upload reproducible source bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v05-direct-source
+          path: v05-direct-source.tgz
