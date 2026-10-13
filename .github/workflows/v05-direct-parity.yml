@@ -30,3 +30,25 @@ jobs:
         with:
           name: v05-direct-parity-screenshots
           path: evidence/v05-direct/
+
+      - name: Package exact source and migrated modules for offline ChatGPT work
+        if: always()
+        run: |
+          tar czf v05-direct-source.tgz \
+            assets/reference/svg-motion-lab-v0.5.svg \
+            assets/source/manekin2D-vertical2.svg \
+            public/v05-direct/ \
+            tests/v05-direct-browser.mjs \
+            tests/v05-direct-structure.test.mjs \
+            package.json \
+            docs/UX-BASELINE-v0.5.md \
+            docs/V05-REALITY-AUDIT.md \
+            docs/PRODUCT-CONTRACT.md \
+            docs/GESTURE-CONTRACT.md \
+            docs/EDITOR-STATE-AND-STORAGE.md
+      - name: Upload reproducible source bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v05-direct-source
+          path: v05-direct-source.tgz
