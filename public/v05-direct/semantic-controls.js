@@ -25,9 +25,9 @@ const entries=nodes.map((source,index)=>{
     source.dispatchEvent(clicked);
     requestAnimationFrame(sync);
   });
-  // The SVG is still the visual, but must not duplicate the button in A11Y.
-  source.setAttribute('aria-hidden','true');
-  source.setAttribute('tabindex','-1');
+  // Do NOT change the source SVG attributes: exportSVG clones this tree,
+  // and hiding/tabindex mutations would corrupt the standalone SVG export.
+  // Duplicate A11Y roles remain an explicit temporary migration gap.
   layer.append(button);
   return {source,button};
 });
