@@ -44,7 +44,15 @@ try{
    await page.screenshot({path:'evidence/v05-direct/'+label+'-'+kind+'.png'});
    shots.push(PNG.sync.read(await page.screenshot()));
    // REAL UI route: click v0.5's authored SVG control and joint handle.
-   await page.locator('[data-action="axis-cycle"]:visible').first().click({force:true});
+   if(kind==='html'){
+     const semantic=page.locator('button.v05-semantic-action');
+     assert.equal(await semantic.count(),43,'43 SVG original action nodes mapped to HTML buttons');
+     const active=page.locator('button.v05-semantic-action:visible');
+     assert((await active.count())>=10,'semantic HTML buttons visible');
+     await page.locator('button.v05-semantic-action[data-v05-action="axis-cycle"]:visible').first().click();
+   }else{
+     await page.locator('[data-action="axis-cycle"]:visible').first().click({force:true});
+   }
    assert.equal((await page.evaluate(()=>window.AcroSVGLab.getState())).axis,'X','native axis-cycle click');
    await page.locator('[data-joint="shoulder"]:visible').first().click({force:true});
    const tap=await page.evaluate(()=>window.AcroSVGLab.getState());
