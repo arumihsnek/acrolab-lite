@@ -19,19 +19,47 @@ test('exact 13 joint handles, source paths and metadata carried into HTML',()=>{
   for(const name of ['hip','knee','ankle','midtarsal','mtp','lower_trunk','upper_trunk','neck_base','head_neck','shoulder','elbow','wrist','collective_finger'])
     assert(html.includes('data-joint="'+name+'"'),'missing joint '+name);
 });
-test('original controller equivalent modulo extracted constants and export compatibility',()=>{
+test('verbatim controller reconstructed across 4 extracted ES modules',()=>{
   assert(sourceScript,'source inline controller not found');
   const source=sourceScript[1].replace(/^<!\[CDATA\[/,'').replace(/\]\]>$/,'');
-  const constants=source.slice(source.indexOf('const CHANNELS='),source.indexOf('const round='));
+  const span=(a,b)=>source.slice(source.indexOf(a),source.indexOf(b,source.indexOf(a)));
+  const constants=span('const CHANNELS=','const round=');
+  const helpers=span('const round=','const key=');
+  const validator=span('function validate(d){','validate(data);');
+  const topology=span('function hasDescendant(','function selectedPivot(');
   const rig=readFileSync('public/v05-direct/rig-definition.js','utf8');
-  assert(rig.includes(constants),'rig module changed original constants');
-  const imported="import { CHANNELS, LIMITS, SIGN, PIVOT, PART, ID, PARENT, SOURCE_SHA, initBody } from './rig-definition.js';";
-  assert(ctrl.includes(imported),'controller does not import extracted module');
-  const external=ctrl.slice(ctrl.indexOf("(()=>{'use strict';"));
-  const repaired=external
+  const val=readFileSync('public/v05-direct/state-validation.js','utf8');
+  const topo=readFileSync('public/v05-direct/topology.js','utf8');
+  const utils=readFileSync('public/v05-direct/state-utils.js','utf8');
+  assert(rig.includes(constants));
+  assert(rig.includes('export const MAX_KEYS=100;'));
+  assert(val.includes(validator));
+  assert(topo.includes(topology));
+  assert(utils.includes(helpers));
+  for(const file of ['./rig-definition.js','./state-validation.js','./topology.js','./state-utils.js'])
+    assert(ctrl.includes(file),'module not imported: '+file);
+  let recovered=ctrl.slice(ctrl.indexOf("(()=>{'use strict';"));
+  recovered=recovered
     .replace("root.querySelector('#motionLabScript')?.setAttribute('type','application/ecmascript');",'')
-    .replace('const round=',constants+'const round=');
-  assert.equal(repaired,source,'Unexpected rewrite in v0.5 behavior/controller');
+    .replace('const key=',constants+helpers+'const key=')
+    .replace("const floorY=271.88986,canPose=k=>k?.kind!=='ghost';","const floorY=271.88986,canPose=k=>k?.kind!=='ghost',MAX_KEYS=100;")
+    .replace('validate(data);',validator+'validate(data);')
+    .replace('function selectedPivot(',topology+'function selectedPivot(');
+  assert.equal(recovered,source,'Unintentional behavioral rewrite during module extraction');
+});
+test('exact original constraints usable from pure ES modules',async()=>{
+  const {validate}=await import('../public/v05-direct/state-validation.js');
+  const {hasDescendant}=await import('../public/v05-direct/topology.js');
+  const {PIVOT,CHANNELS,MAX_KEYS}=await import('../public/v05-direct/rig-definition.js');
+  assert.equal(CHANNELS.length,13);assert.equal(Object.keys(PIVOT).length,13);assert.equal(MAX_KEYS,100);
+  const metadata=src.match(/<metadata id="acro-pose-data">([\s\S]*?)<\/metadata>/);
+  assert(metadata);
+  const data=JSON.parse(metadata[1]);
+  assert.equal(validate(data),undefined);
+  assert(hasDescendant('hip','mtp'));
+  assert(hasDescendant('upper_trunk','wrist'));
+  assert(!hasDescendant('shoulder','head_neck'));
+  assert.throws(()=>validate({...data,rig:{...data.rig,svg_source_sha256:'bad'}}),/Different SVG pivot mapping/);
 });
 test('source SVG script preserved inert in HTML, restored only on SVG export',()=>{
   assert(html.includes('type="application/x-acrolab-v05-frozen-source"'));
