@@ -61,6 +61,14 @@ try{
    await page.evaluate(()=>{const a=window.AcroSVGLab;a.action('mode','FLIP');a.action('axis-cycle');a.action('zoom-in');});
    const after=projections(await page.evaluate(()=>window.AcroSVGLab.getState()));
    assert.equal(after.mode,'FLIP');assert.equal(after.axis,'Y');assert(after.stageZoom>1);
+   // Versioned JSON authored-data compatibility, not just visual parity.
+   const jd=page.waitForEvent('download');
+   await page.evaluate(()=>window.AcroSVGLab.action('export-json'));
+   const jsonDownload=await jd, jsonStream=await jsonDownload.createReadStream(), jsonChunks=[];
+   for await(const c of jsonStream)jsonChunks.push(c);
+   const exportedJson=JSON.parse(Buffer.concat(jsonChunks).toString());
+   assert.deepEqual(exportedJson,await page.evaluate(()=>window.AcroSVGLab.getState().data));
+   assert.equal(exportedJson.rig.svg_source_sha256,'7069ad3dfd8170e862f24e1a408848040807ccb1d569c340143ad75e34812835');
    const dl=page.waitForEvent('download');
    await page.evaluate(()=>window.AcroSVGLab.action('export-svg'));
    const download=await dl;const stream=await download.createReadStream(),chunks=[];
