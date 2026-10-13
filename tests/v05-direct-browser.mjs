@@ -46,7 +46,7 @@ try{
    // REAL UI route: click v0.5's authored SVG control and joint handle.
    if(kind==='html'){
      const semantic=page.locator('button.v05-semantic-action');
-     assert.equal(await semantic.count(),43,'43 SVG original action nodes mapped to HTML buttons');
+     assert.equal(await semantic.count(),await page.locator('#lab-svg [data-action]').count(),'one semantic button per source action node');
      const active=page.locator('button.v05-semantic-action:visible');
      assert((await active.count())>=10,'semantic HTML buttons visible');
      await page.locator('button.v05-semantic-action[data-v05-action="axis-cycle"]:visible').first().click();
